@@ -18,7 +18,7 @@ const TeamSection = () => {
     {
       name: "André Mateus de Amorim Laurentino",
       role: "Especialista em Fisioterapia Esportiva",
-      image: "/lovable-uploads/b6dc7a40-2e0f-45b8-bfc8-2649c4e1a6e1.png",
+      image: "/lovable-uploads/0e966561-6870-4fba-9766-b1d7dfb5f60d.png",
       description: "Especialista em fisioterapia esportiva, atua na prevenção e recuperação de atletas recreativos e de alto rendimento, ajudando-os a manter desempenho e qualidade de vida.",
       expertise: [
         "Fisioterapia esportiva",
@@ -42,7 +42,7 @@ const TeamSection = () => {
     {
       name: "André Rogério Abreu",
       role: "Especialista em Coluna e Quadril",
-      image: "/lovable-uploads/0e966561-6870-4fba-9766-b1d7dfb5f60d.png",
+      image: "/lovable-uploads/b6dc7a40-2e0f-45b8-bfc8-2649c4e1a6e1.png",
       description: "Especialista em coluna e quadril, trabalha na reabilitação de dores crônicas e pós-cirúrgicos, priorizando movimento seguro e melhora da funcionalidade.",
       expertise: [
         "Reabilitação de coluna",
