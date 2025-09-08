@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Heart, Award, Users, Play } from 'lucide-react';
-import heroImage from '@/assets/hero-dynamic.jpg';
+import heroImage from '/lovable-uploads/358c886a-9a41-43fb-80a2-5b4c00b84033.png';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -16,7 +16,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Pessoa praticando atividade física ao ar livre com energia e vitalidade"
+          alt="Movimento e bem-estar com o símbolo X da marca Nexus representando conexão e vitalidade"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/60 to-accent/70"></div>
