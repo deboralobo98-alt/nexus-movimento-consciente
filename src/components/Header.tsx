@@ -20,11 +20,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">N</span>
-            </div>
-            <span className="text-xl font-bold text-primary">Nexus Fisioterapia</span>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/75661b90-7fd6-47ac-a7c4-5dc294bfa3d0.png" 
+              alt="Nexus Fisioterapia"
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
