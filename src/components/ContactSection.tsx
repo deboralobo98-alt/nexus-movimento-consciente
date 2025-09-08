@@ -74,8 +74,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "E-mail",
-      content: "contato@nexusfisioterapia.com.br",
-      link: "mailto:contato@nexusfisioterapia.com.br",
+      content: "contato@nexusfisio.com.br",
+      link: "mailto:contato@nexusfisio.com.br",
       description: "Envie sua dúvida"
     },
     {

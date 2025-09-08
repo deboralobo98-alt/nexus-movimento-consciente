@@ -175,28 +175,15 @@ const AboutSection = () => {
 
         {/* New Horizon Stats */}
         <div className="bg-gradient-to-r from-primary to-accent rounded-2xl p-12 text-white text-center shadow-strong">
-          <h3 className="text-3xl font-bold mb-6">Um Novo Horizonte</h3>
-          <p className="text-xl leading-relaxed mb-12 max-w-4xl mx-auto">
-            Hoje, estamos escrevendo uma nova fase da clínica: ampliando nossa equipe, 
-            acolhendo novos profissionais, valorizando novas ideias, e expandindo horizontes 
-            para levar bem-estar e qualidade de vida a cada paciente que passa por nós.
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-              <div className="text-4xl font-bold mb-2">4+</div>
-              <div className="text-white/80 text-sm">Anos de experiência</div>
+          <h3 className="text-3xl font-bold mb-12">Um Novo Horizonte</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center max-w-2xl mx-auto">
+            <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
+              <div className="text-5xl font-bold mb-4">500+</div>
+              <div className="text-white/90 text-lg font-medium">Pacientes atendidos</div>
             </div>
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-              <div className="text-4xl font-bold mb-2">1000+</div>
-              <div className="text-white/80 text-sm">Pacientes atendidos</div>
-            </div>
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-              <div className="text-4xl font-bold mb-2">4</div>
-              <div className="text-white/80 text-sm">Especialistas</div>
-            </div>
-            <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
-              <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="text-white/80 text-sm">Dedicação</div>
+            <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
+              <div className="text-5xl font-bold mb-4">4</div>
+              <div className="text-white/90 text-lg font-medium">Equipe multidisciplinar</div>
             </div>
           </div>
         </div>
