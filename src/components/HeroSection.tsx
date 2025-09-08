@@ -24,11 +24,14 @@ const HeroSection = () => {
 
       {/* Nexus X Symbol Overlay */}
       <div className="absolute inset-0 z-5 flex items-center justify-center pointer-events-none">
-        <img 
-          src="/lovable-uploads/358c886a-9a41-43fb-80a2-5b4c00b84033.png"
-          alt="Símbolo X da Nexus"
-          className="w-96 h-96 opacity-20 object-contain"
-        />
+        <div className="relative w-96 h-96">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-80 h-3 bg-white/20 rounded-full transform rotate-45"></div>
+          </div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-80 h-3 bg-white/20 rounded-full transform -rotate-45"></div>
+          </div>
+        </div>
       </div>
 
       {/* Dynamic geometric elements */}
