@@ -19,9 +19,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="/lovable-uploads/afcf1b86-47a7-4a61-a371-577f5f2d6a25.png" 
+                src="/lovable-uploads/08e50fab-edc8-4e22-81de-4e93076466df.png" 
                 alt="Nexus Fisioterapia"
-                className="h-8 w-auto"
+                className="h-6 w-auto"
               />
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
