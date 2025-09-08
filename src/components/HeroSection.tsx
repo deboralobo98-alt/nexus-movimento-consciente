@@ -22,12 +22,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/60 to-accent/70"></div>
       </div>
 
-      {/* Decorative element on left side */}
-      <div className="absolute top-1/2 -left-96 transform -translate-y-1/2 z-5 pointer-events-none">
+      {/* Decorative element on left side - full height */}
+      <div className="absolute top-0 -left-96 h-full flex items-center z-5 pointer-events-none">
         <img 
           src="/lovable-uploads/8a3cf4ca-48e4-4c6c-8264-13d6b7038cea.png"
           alt="Elemento decorativo"
-          className="w-[500px] h-[500px] opacity-15 object-contain"
+          className="w-[500px] h-full opacity-15 object-cover"
         />
       </div>
 
