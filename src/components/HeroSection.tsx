@@ -22,16 +22,13 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/60 to-accent/70"></div>
       </div>
 
-      {/* Nexus X Symbol Overlay */}
-      <div className="absolute inset-0 z-5 flex items-center justify-center pointer-events-none">
-        <div className="relative w-96 h-96">
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-80 h-3 bg-white/20 rounded-full transform rotate-45"></div>
-          </div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-80 h-3 bg-white/20 rounded-full transform -rotate-45"></div>
-          </div>
-        </div>
+      {/* Decorative element in left corner */}
+      <div className="absolute top-20 left-10 z-5 pointer-events-none">
+        <img 
+          src="/lovable-uploads/8a3cf4ca-48e4-4c6c-8264-13d6b7038cea.png"
+          alt="Elemento decorativo"
+          className="w-40 h-40 opacity-10 object-contain"
+        />
       </div>
 
       {/* Dynamic geometric elements */}
