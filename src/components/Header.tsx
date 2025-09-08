@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/75661b90-7fd6-47ac-a7c4-5dc294bfa3d0.png" 
+              src="/lovable-uploads/9670d32d-9cf8-4c66-abb1-7016b1b8bf93.png" 
               alt="Nexus Fisioterapia"
               className="h-10 w-auto"
             />

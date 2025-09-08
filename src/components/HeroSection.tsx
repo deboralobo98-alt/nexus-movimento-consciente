@@ -39,17 +39,17 @@ const HeroSection = () => {
             <span className="text-lg font-medium tracking-wide">Excelência • Precisão • Cuidado</span>
           </div>
 
-          {/* Elegant heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light mb-8 leading-none tracking-tight">
+          {/* Elegant heading - Reduced sizes for elegance */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light mb-8 leading-tight tracking-tight">
             <span className="block font-extralight animate-fade-in-up">Sua jornada</span>
-            <span className="block text-accent text-6xl md:text-8xl lg:text-9xl font-bold animate-fade-in-up animation-delay-200">de recuperação</span>
-            <span className="block text-3xl md:text-4xl lg:text-5xl font-light mt-6 text-white/95 animate-fade-in-up animation-delay-400">
+            <span className="block text-accent text-4xl md:text-5xl lg:text-6xl font-bold animate-fade-in-up animation-delay-200">de recuperação</span>
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-light mt-4 text-white/95 animate-fade-in-up animation-delay-400">
               começa com especialistas dedicados
             </span>
           </h1>
 
-          {/* Elegant subtitle */}
-          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
+          {/* Elegant subtitle - Reduced size */}
+          <p className="text-lg md:text-xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed font-light">
             Fisioterapia esportiva e reabilitação especializada com técnicas avançadas
             <br className="hidden md:block" />
             <span className="text-accent font-medium">Transformamos limitações em conquistas</span> no coração de Florianópolis

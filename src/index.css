@@ -8,17 +8,17 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Nexus Fisioterapia Brand Colors */
+    /* Nexus Fisioterapia Brand Colors - Primary Color Updated to #1d2140 */
     --background: 0 0% 96%;  /* White Smoke */
-    --foreground: 217 32% 16%;  /* Cadet Blue */
+    --foreground: 217 44% 16%;  /* Updated #1d2140 */
 
     --card: 0 0% 100%;
-    --card-foreground: 217 32% 16%;
+    --card-foreground: 217 44% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 217 32% 16%;
+    --popover-foreground: 217 44% 16%;
 
-    --primary: 217 32% 16%;  /* Cadet Blue */
+    --primary: 217 44% 16%;  /* Updated #1d2140 */
     --primary-foreground: 0 0% 98%;
 
     --secondary: 188 19% 59%;  /* Moonstone */
@@ -37,14 +37,14 @@ All colors MUST be HSL.
     --input: 217 20% 90%;
     --ring: 188 19% 59%;
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(217 32% 16%), hsl(217 32% 20%));
+    /* Custom design tokens - Updated gradients with new primary color */
+    --gradient-primary: linear-gradient(135deg, hsl(217 44% 16%), hsl(217 44% 20%));
     --gradient-secondary: linear-gradient(135deg, hsl(188 19% 59%), hsl(188 25% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 32% 16%) 0%, hsl(188 19% 59%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 44% 16%) 0%, hsl(188 19% 59%) 100%);
     
-    --shadow-soft: 0 4px 20px -4px hsl(217 32% 16% / 0.1);
-    --shadow-medium: 0 8px 30px -8px hsl(217 32% 16% / 0.15);
-    --shadow-strong: 0 20px 40px -12px hsl(217 32% 16% / 0.25);
+    --shadow-soft: 0 4px 20px -4px hsl(217 44% 16% / 0.1);
+    --shadow-medium: 0 8px 30px -8px hsl(217 44% 16% / 0.15);
+    --shadow-strong: 0 20px 40px -12px hsl(217 44% 16% / 0.25);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -73,38 +73,38 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 217 32% 10%;
+    --background: 217 44% 10%;
     --foreground: 0 0% 96%;
 
-    --card: 217 32% 12%;
+    --card: 217 44% 12%;
     --card-foreground: 0 0% 96%;
 
-    --popover: 217 32% 12%;
+    --popover: 217 44% 12%;
     --popover-foreground: 0 0% 96%;
 
     --primary: 188 19% 59%;  /* Moonstone for dark mode */
-    --primary-foreground: 217 32% 16%;
+    --primary-foreground: 217 44% 16%;
 
-    --secondary: 217 25% 20%;
+    --secondary: 217 44% 20%;
     --secondary-foreground: 0 0% 96%;
 
-    --muted: 217 25% 18%;
+    --muted: 217 44% 18%;
     --muted-foreground: 217 15% 70%;
 
     --accent: 188 19% 59%;
-    --accent-foreground: 217 32% 16%;
+    --accent-foreground: 217 44% 16%;
 
     --destructive: 0 75% 55%;
     --destructive-foreground: 0 0% 96%;
 
-    --border: 217 25% 20%;
-    --input: 217 25% 18%;
+    --border: 217 44% 20%;
+    --input: 217 44% 18%;
     --ring: 188 19% 59%;
 
-    /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(217 32% 12%), hsl(217 32% 16%));
+    /* Dark mode gradients - Updated with new primary color */
+    --gradient-primary: linear-gradient(135deg, hsl(217 44% 12%), hsl(217 44% 16%));
     --gradient-secondary: linear-gradient(135deg, hsl(188 19% 59%), hsl(188 25% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(217 32% 12%) 0%, hsl(188 19% 59%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 44% 12%) 0%, hsl(188 19% 59%) 100%);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
