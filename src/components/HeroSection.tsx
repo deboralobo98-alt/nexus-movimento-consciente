@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Heart, Award, Users, Play } from 'lucide-react';
-import heroImage from '@/assets/hero-wellness.jpg';
+import heroImage from '@/assets/hero-dynamic.jpg';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -12,58 +12,59 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with modern overlay */}
+      {/* Background with dynamic overlay */}
       <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Pessoas praticando atividades de bem-estar e movimento"
+          alt="Pessoa praticando atividade física ao ar livre com energia e vitalidade"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-accent/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/60 to-accent/70"></div>
       </div>
 
-      {/* Floating elements for modern touch */}
+      {/* Dynamic geometric elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-32 right-20 w-24 h-24 bg-accent/20 rounded-full blur-lg animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-white/5 rounded-full blur-md animate-pulse delay-500"></div>
+        <div className="absolute top-20 left-10 w-40 h-40 border-2 border-white/20 rounded-3xl rotate-12 animate-pulse"></div>
+        <div className="absolute bottom-32 right-20 w-32 h-32 border-2 border-accent/30 rounded-2xl -rotate-12 animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-white/10 rounded-xl rotate-45 animate-pulse delay-500"></div>
+        <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-accent/10 rounded-full animate-pulse delay-700"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-5xl mx-auto text-center text-white">
-          {/* Badge */}
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-white/20">
-            <Heart className="w-5 h-5 mr-2 text-accent" />
-            <span className="text-sm font-medium">Especialistas em Movimento e Bem-Estar</span>
+          {/* Dynamic badge */}
+          <div className="inline-flex items-center bg-accent/20 backdrop-blur-sm rounded-full px-8 py-4 mb-8 border border-accent/30 animate-pulse">
+            <Heart className="w-5 h-5 mr-3 text-accent" />
+            <span className="text-lg font-semibold">Movimento • Energia • Vitalidade</span>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
-            <span className="block">Movimento</span>
-            <span className="block text-accent">é vida</span>
-            <span className="block text-4xl md:text-5xl lg:text-6xl font-normal mt-4 text-white/90">
-              cuide do seu corpo com quem entende
+          {/* Dynamic heading with energy */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-none tracking-tight">
+            <span className="block animate-fade-in-up">MOVIMENTO</span>
+            <span className="block text-accent text-6xl md:text-8xl lg:text-9xl animate-fade-in-up animation-delay-200">É VIDA</span>
+            <span className="block text-3xl md:text-4xl lg:text-5xl font-medium mt-6 text-white/95 animate-fade-in-up animation-delay-400">
+              Desperte seu potencial com quem entende
             </span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Especialistas em fisioterapia esportiva, reabilitação de ombro, coluna e quadril. 
+          {/* Dynamic subtitle */}
+          <p className="text-xl md:text-2xl mb-12 text-white/95 max-w-4xl mx-auto leading-relaxed font-medium">
+            🏃‍♂️ Fisioterapia Esportiva • 💪 Reabilitação Especializada • ⚡ Resultados Transformadores
             <br className="hidden md:block" />
-            Transforme sua qualidade de vida com nosso atendimento personalizado em Florianópolis.
+            <span className="text-accent font-semibold">Liberdade de movimento</span> começa aqui, em Florianópolis
           </p>
 
-          {/* CTA Buttons */}
+          {/* Dynamic CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Button 
               variant="appointment" 
               size="lg"
               onClick={scrollToContact}
-              className="text-lg px-10 py-6 h-auto rounded-full shadow-2xl hover:shadow-accent/20"
+              className="text-xl px-12 py-7 h-auto rounded-full shadow-2xl hover:shadow-accent/30 transform hover:scale-110 transition-all duration-300 animate-bounce-subtle"
             >
-              Agendar Consulta
-              <ArrowRight className="w-5 h-5" />
+              🚀 COMECE AGORA
+              <ArrowRight className="w-6 h-6" />
             </Button>
             <a 
               href="https://wa.me/5548999999999" 
@@ -73,10 +74,10 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="text-lg px-10 py-6 h-auto rounded-full bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
+                className="text-xl px-12 py-7 h-auto rounded-full bg-white/15 border-white/40 text-white hover:bg-white/25 backdrop-blur-sm transform hover:scale-105 transition-all duration-300"
               >
-                <Play className="w-5 h-5" />
-                Falar no WhatsApp
+                💬 WhatsApp Direto
+                <Play className="w-6 h-6" />
               </Button>
             </a>
           </div>
