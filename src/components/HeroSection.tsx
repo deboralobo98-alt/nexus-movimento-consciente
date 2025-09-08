@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Heart, Award, Users, Play } from 'lucide-react';
-import heroImage from '/lovable-uploads/358c886a-9a41-43fb-80a2-5b4c00b84033.png';
+import heroImage from '@/assets/hero-dynamic.jpg';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -13,13 +13,22 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with dynamic overlay */}
-      <div className="absolute inset-0 z-0 bg-green-400">
+      <div className="absolute inset-0 z-0">
         <img 
           src={heroImage} 
-          alt="Movimento e bem-estar com o símbolo X da marca Nexus representando conexão e vitalidade"
-          className="w-full h-full object-cover object-center scale-75"
+          alt="Pessoa praticando atividade física ao ar livre com energia e vitalidade"
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/60 to-accent/70"></div>
+      </div>
+
+      {/* Nexus X Symbol Overlay */}
+      <div className="absolute inset-0 z-5 flex items-center justify-center pointer-events-none">
+        <img 
+          src="/lovable-uploads/358c886a-9a41-43fb-80a2-5b4c00b84033.png"
+          alt="Símbolo X da Nexus"
+          className="w-96 h-96 opacity-20 object-contain"
+        />
       </div>
 
       {/* Dynamic geometric elements */}
