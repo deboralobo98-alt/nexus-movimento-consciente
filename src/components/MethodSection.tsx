@@ -16,7 +16,7 @@ const MethodSection = () => {
   ];
 
   return (
-    <section id="method" className="py-20 bg-gradient-to-br from-background to-muted/30 relative overflow-hidden">
+    <section id="method" className="py-20 pb-10 bg-gradient-to-br from-background to-muted/30 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 right-20 w-64 h-64 border border-accent/10 rounded-full"></div>
