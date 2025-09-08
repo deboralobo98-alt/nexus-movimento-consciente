@@ -21,7 +21,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/08e50fab-edc8-4e22-81de-4e93076466df.png" 
                 alt="Nexus Fisioterapia"
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
