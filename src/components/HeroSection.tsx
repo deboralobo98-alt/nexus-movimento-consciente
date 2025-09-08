@@ -13,7 +13,7 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with dynamic overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-green-400">
         <img 
           src={heroImage} 
           alt="Movimento e bem-estar com o símbolo X da marca Nexus representando conexão e vitalidade"
