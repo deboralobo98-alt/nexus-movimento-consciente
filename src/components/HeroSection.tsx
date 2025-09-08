@@ -33,38 +33,38 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">
         <div className="max-w-5xl mx-auto text-center text-white">
-          {/* Dynamic badge */}
-          <div className="inline-flex items-center bg-accent/20 backdrop-blur-sm rounded-full px-8 py-4 mb-8 border border-accent/30 animate-pulse">
+          {/* Elegant badge */}
+          <div className="inline-flex items-center bg-accent/20 backdrop-blur-sm rounded-full px-8 py-4 mb-8 border border-accent/30">
             <Heart className="w-5 h-5 mr-3 text-accent" />
-            <span className="text-lg font-semibold">Movimento • Energia • Vitalidade</span>
+            <span className="text-lg font-medium tracking-wide">Excelência • Precisão • Cuidado</span>
           </div>
 
-          {/* Dynamic heading with energy */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-none tracking-tight">
-            <span className="block animate-fade-in-up">MOVIMENTO</span>
-            <span className="block text-accent text-6xl md:text-8xl lg:text-9xl animate-fade-in-up animation-delay-200">É VIDA</span>
-            <span className="block text-3xl md:text-4xl lg:text-5xl font-medium mt-6 text-white/95 animate-fade-in-up animation-delay-400">
-              Desperte seu potencial com quem entende
+          {/* Elegant heading */}
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-light mb-8 leading-none tracking-tight">
+            <span className="block font-extralight animate-fade-in-up">Sua jornada</span>
+            <span className="block text-accent text-6xl md:text-8xl lg:text-9xl font-bold animate-fade-in-up animation-delay-200">de recuperação</span>
+            <span className="block text-3xl md:text-4xl lg:text-5xl font-light mt-6 text-white/95 animate-fade-in-up animation-delay-400">
+              começa com especialistas dedicados
             </span>
           </h1>
 
-          {/* Dynamic subtitle */}
-          <p className="text-xl md:text-2xl mb-12 text-white/95 max-w-4xl mx-auto leading-relaxed font-medium">
-            🏃‍♂️ Fisioterapia Esportiva • 💪 Reabilitação Especializada • ⚡ Resultados Transformadores
+          {/* Elegant subtitle */}
+          <p className="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed font-light">
+            Fisioterapia esportiva e reabilitação especializada com técnicas avançadas
             <br className="hidden md:block" />
-            <span className="text-accent font-semibold">Liberdade de movimento</span> começa aqui, em Florianópolis
+            <span className="text-accent font-medium">Transformamos limitações em conquistas</span> no coração de Florianópolis
           </p>
 
-          {/* Dynamic CTA buttons */}
+          {/* Elegant CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
             <Button 
               variant="appointment" 
               size="lg"
               onClick={scrollToContact}
-              className="text-xl px-12 py-7 h-auto rounded-full shadow-2xl hover:shadow-accent/30 transform hover:scale-110 transition-all duration-300 animate-bounce-subtle"
+              className="text-lg px-10 py-6 h-auto rounded-full shadow-2xl hover:shadow-accent/30 transform hover:scale-105 transition-all duration-500 font-medium"
             >
-              🚀 COMECE AGORA
-              <ArrowRight className="w-6 h-6" />
+              Agendar Consulta
+              <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <a 
               href="https://wa.me/5548999999999" 
@@ -74,10 +74,10 @@ const HeroSection = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="text-xl px-12 py-7 h-auto rounded-full bg-white/15 border-white/40 text-white hover:bg-white/25 backdrop-blur-sm transform hover:scale-105 transition-all duration-300"
+                className="text-lg px-10 py-6 h-auto rounded-full bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm transform hover:scale-105 transition-all duration-500 font-medium"
               >
-                💬 WhatsApp Direto
-                <Play className="w-6 h-6" />
+                Falar no WhatsApp
+                <Play className="w-5 h-5 ml-2" />
               </Button>
             </a>
           </div>
