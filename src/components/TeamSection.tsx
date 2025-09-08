@@ -142,7 +142,7 @@ const TeamSection = () => {
         {/* Team Philosophy */}
         <div className="bg-card rounded-2xl p-12 shadow-medium text-center">
           <h3 className="text-3xl font-bold text-primary mb-6">
-            Filosofia da Nossa Equipe
+            Nossa filosofia
           </h3>
           <p className="text-xl text-muted-foreground leading-relaxed mb-8 max-w-4xl mx-auto">
             Acreditamos que o cuidado vai além da técnica. Nossa equipe é unida pela paixão em transformar vidas, 
@@ -152,9 +152,9 @@ const TeamSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 gradient-secondary rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">4+</span>
+                <span className="text-2xl font-bold text-white">+500</span>
               </div>
-              <h4 className="font-bold text-primary mb-2">Anos Juntos</h4>
+              <h4 className="font-bold text-primary mb-2">Pacientes Atendidos</h4>
               <p className="text-muted-foreground">Uma equipe consolidada e experiente</p>
             </div>
             
