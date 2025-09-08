@@ -1,6 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Quote } from 'lucide-react';
-import clinicInterior from '@/assets/clinic-interior.jpg';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -126,8 +125,8 @@ const TestimonialsSection = () => {
           {/* Left Column - Image */}
           <div className="order-2 lg:order-1">
             <img 
-              src={clinicInterior}
-              alt="Interior moderno da clínica Nexus Fisioterapia com equipamentos profissionais"
+              src="/lovable-uploads/694c93af-49e3-4519-8bd8-5167b174c087.png"
+              alt="Interior real da clínica Nexus Fisioterapia com macas profissionais e equipamentos modernos"
               className="w-full rounded-2xl shadow-strong object-cover h-[400px]"
             />
           </div>

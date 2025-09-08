@@ -109,8 +109,8 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-primary-foreground/80 text-sm">
-                    Rua das Flores, 123 - Centro<br />
-                    Florianópolis/SC
+                    Rua Capitão Amaro Seixas Ribeiro, 58 - Santa Monica<br />
+                    Florianópolis - SC, 88035-300
                   </p>
                 </div>
               </div>
@@ -118,10 +118,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
                 <a 
-                  href="tel:+5548999999999" 
+                  href="tel:+554832068868" 
                   className="text-primary-foreground/80 hover:text-accent transition-smooth text-sm"
                 >
-                  (48) 99999-9999
+                  (48) 3206-8868
                 </a>
               </div>
               

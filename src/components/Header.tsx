@@ -70,9 +70,9 @@ const Header = () => {
 
           {/* Contact Actions */}
           <div className="hidden md:flex items-center space-x-3">
-            <a href="tel:+5548999999999" className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-smooth">
+            <a href="tel:+554832068868" className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-smooth">
               <Phone className="w-4 h-4" />
-              <span>(48) 99999-9999</span>
+              <span>(48) 3206-8868</span>
             </a>
             <a 
               href="https://wa.me/5548999999999" 
@@ -144,9 +144,9 @@ const Header = () => {
               
               {/* Mobile Contact Actions */}
               <div className="px-4 py-2 space-y-3 border-t border-border mt-4 pt-4">
-                <a href="tel:+5548999999999" className="flex items-center space-x-2 text-sm text-muted-foreground">
+                <a href="tel:+554832068868" className="flex items-center space-x-2 text-sm text-muted-foreground">
                   <Phone className="w-4 h-4" />
-                  <span>(48) 99999-9999</span>
+                  <span>(48) 3206-8868</span>
                 </a>
                 <a 
                   href="https://wa.me/5548999999999" 

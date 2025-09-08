@@ -60,8 +60,8 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Telefone",
-      content: "(48) 99999-9999",
-      link: "tel:+5548999999999",
+      content: "(48) 3206-8868",
+      link: "tel:+554832068868",
       description: "Ligue para agendamento"
     },
     {
@@ -81,9 +81,9 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: "Endereço",
-      content: "Rua das Flores, 123 - Centro",
-      link: "https://maps.google.com",
-      description: "Florianópolis/SC"
+      content: "Rua Capitão Amaro Seixas Ribeiro, 58 - Santa Monica",
+      link: "https://maps.google.com/search/Rua+Capit%C3%A3o+Amaro+Seixas+Ribeiro,+58+-+Santa+Monica+Florian%C3%B3polis+-+SC",
+      description: "Florianópolis - SC, 88035-300"
     }
   ];
 
@@ -157,7 +157,7 @@ const ContactSection = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="(48) 99999-9999"
+                        placeholder="(48) 3206-8868"
                         required
                         className="mt-2"
                       />
@@ -290,7 +290,7 @@ const ContactSection = () => {
                   <div className="text-center">
                     <MapPin className="w-12 h-12 text-accent mx-auto mb-4" />
                     <h4 className="text-lg font-bold text-primary mb-2">Nossa Localização</h4>
-                    <p className="text-muted-foreground mb-4">Rua das Flores, 123 - Centro<br />Florianópolis/SC</p>
+                    <p className="text-muted-foreground mb-4">Rua Capitão Amaro Seixas Ribeiro, 58 - Santa Monica<br />Florianópolis - SC, 88035-300</p>
                     <a 
                       href="https://maps.google.com" 
                       target="_blank" 
@@ -317,7 +317,7 @@ const ContactSection = () => {
                 Nossa equipe está preparada para atendê-lo quando você mais precisar.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+5548999999999">
+                <a href="tel:+554832068868">
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
                     <Phone className="w-5 h-5" />
                     Ligar Agora
