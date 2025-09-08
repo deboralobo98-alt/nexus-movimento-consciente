@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Heart, Users, Award, Target, BookOpen, Lightbulb } from 'lucide-react';
+import { Heart, Users, Award, Target, BookOpen, Lightbulb, UserCheck, TrendingUp } from 'lucide-react';
 
 const AboutSection = () => {
   const values = [
@@ -173,17 +173,82 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* New Horizon Stats */}
-        <div className="bg-gradient-to-r from-primary to-accent rounded-2xl p-12 text-white text-center shadow-strong">
-          <h3 className="text-3xl font-bold mb-12">Um Novo Horizonte</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center max-w-2xl mx-auto">
-            <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
-              <div className="text-5xl font-bold mb-4">500+</div>
-              <div className="text-white/90 text-lg font-medium">Pacientes atendidos</div>
-            </div>
-            <div className="bg-white/10 rounded-xl p-8 backdrop-blur-sm">
-              <div className="text-5xl font-bold mb-4">4</div>
-              <div className="text-white/90 text-lg font-medium">Equipe multidisciplinar</div>
+        {/* New Horizon - Completely redesigned */}
+        <div className="relative overflow-hidden">
+          {/* Background decorative elements */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div className="absolute top-10 right-10 w-32 h-32 border border-primary/10 rounded-full"></div>
+            <div className="absolute bottom-10 left-10 w-24 h-24 border border-accent/10 rounded-full"></div>
+          </div>
+
+          <div className="bg-gradient-to-br from-primary via-primary to-accent rounded-2xl p-16 text-white shadow-strong relative z-10">
+            <div className="max-w-6xl mx-auto">
+              {/* Header */}
+              <div className="text-center mb-16">
+                <h3 className="text-4xl md:text-5xl font-bold mb-6">Um Novo Horizonte</h3>
+                <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+                  Nossa jornada é construída com pessoas dedicadas e resultados que transformam vidas
+                </p>
+              </div>
+
+              {/* Main Features Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+                {/* Equipe Multidisciplinar */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 text-center border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                  <div className="w-24 h-24 bg-white/20 rounded-2xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-12 h-12 text-white" />
+                  </div>
+                  <div className="text-6xl font-bold mb-4 text-white">4</div>
+                  <h4 className="text-2xl font-bold mb-4 text-white">Especialistas</h4>
+                  <p className="text-lg text-white/80 mb-6 leading-relaxed">
+                    Equipe multidisciplinar especializada em diferentes áreas da fisioterapia
+                  </p>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <span className="font-medium">Fisioterapia Esportiva</span>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <span className="font-medium">Reabilitação de Ombro</span>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <span className="font-medium">Coluna e Quadril</span>
+                    </div>
+                    <div className="bg-white/10 rounded-lg p-3">
+                      <span className="font-medium">Cuidado Integral</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Pacientes Atendidos */}
+                <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 text-center border border-white/20 hover:bg-white/15 transition-all duration-300 group">
+                  <div className="w-24 h-24 bg-white/20 rounded-2xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <UserCheck className="w-12 h-12 text-white" />
+                  </div>
+                  <div className="text-6xl font-bold mb-4 text-white">+500</div>
+                  <h4 className="text-2xl font-bold mb-4 text-white">Pacientes Atendidos</h4>
+                  <p className="text-lg text-white/80 mb-6 leading-relaxed">
+                    Mais de 500 vidas transformadas através de cuidado especializado e humanizado
+                  </p>
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between bg-white/10 rounded-lg p-3">
+                      <span className="text-sm font-medium">Taxa de Satisfação</span>
+                      <span className="text-sm font-bold">98%</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-white/10 rounded-lg p-3">
+                      <span className="text-sm font-medium">Avaliação Média</span>
+                      <span className="text-sm font-bold">4.9★</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom CTA */}
+              <div className="text-center">
+                <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-8 py-4 border border-white/30">
+                  <TrendingUp className="w-6 h-6 mr-3 text-white" />
+                  <span className="text-lg font-semibold text-white">Crescendo e evoluindo a cada dia</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
