@@ -23,7 +23,7 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative element on left side - full height */}
-      <div className="absolute top-0 -left-96 h-full flex items-center z-5 pointer-events-none">
+      <div className="absolute top-0 -left-[450px] h-full flex items-center z-5 pointer-events-none">
         <img 
           src="/lovable-uploads/8a3cf4ca-48e4-4c6c-8264-13d6b7038cea.png"
           alt="Elemento decorativo"
@@ -33,7 +33,6 @@ const HeroSection = () => {
 
       {/* Dynamic geometric elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-40 h-40 border-2 border-white/20 rounded-3xl rotate-12 animate-pulse"></div>
         <div className="absolute bottom-32 right-20 w-32 h-32 border-2 border-accent/30 rounded-2xl -rotate-12 animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-white/10 rounded-xl rotate-45 animate-pulse delay-500"></div>
         <div className="absolute top-1/3 right-1/3 w-16 h-16 bg-accent/10 rounded-full animate-pulse delay-700"></div>
