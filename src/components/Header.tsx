@@ -24,7 +24,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/9670d32d-9cf8-4c66-abb1-7016b1b8bf93.png" 
               alt="Nexus Fisioterapia"
-              className="h-18 w-auto"
+              className="h-16 w-auto"
             />
           </div>
 
