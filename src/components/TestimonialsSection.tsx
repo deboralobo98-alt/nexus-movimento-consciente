@@ -1,5 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Star, Quote } from 'lucide-react';
+import clinicInterior from '@/assets/clinic-interior.jpg';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -121,40 +122,40 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="bg-card rounded-2xl p-12 shadow-medium">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-primary mb-4">
-              Resultados que Falam por Si
-            </h3>
-            <p className="text-xl text-muted-foreground">
-              Nossa dedicação se reflete na satisfação dos nossos pacientes
-            </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Image */}
+          <div className="order-2 lg:order-1">
+            <img 
+              src={clinicInterior}
+              alt="Interior moderno da clínica Nexus Fisioterapia com equipamentos profissionais"
+              className="w-full rounded-2xl shadow-strong object-cover h-[400px]"
+            />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-            <div className="group">
-              <div className="text-5xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                98%
-              </div>
-              <div className="text-muted-foreground">Taxa de satisfação</div>
+          {/* Right Column - Stats */}
+          <div className="order-1 lg:order-2 bg-card rounded-2xl p-12 shadow-medium">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-primary mb-4">
+                Resultados que Falam por Si
+              </h3>
+              <p className="text-xl text-muted-foreground">
+                Nossa dedicação se reflete na satisfação dos nossos pacientes
+              </p>
             </div>
-            <div className="group">
-              <div className="text-5xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                1000+
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+              <div className="group">
+                <div className="text-6xl font-bold text-primary mb-4 group-hover:text-accent transition-colors duration-300">
+                  98%
+                </div>
+                <div className="text-lg text-muted-foreground font-medium">Taxa de satisfação</div>
               </div>
-              <div className="text-muted-foreground">Pacientes atendidos</div>
-            </div>
-            <div className="group">
-              <div className="text-5xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                4.9
+              <div className="group">
+                <div className="text-6xl font-bold text-primary mb-4 group-hover:text-accent transition-colors duration-300">
+                  4.9
+                </div>
+                <div className="text-lg text-muted-foreground font-medium">Avaliação média</div>
               </div>
-              <div className="text-muted-foreground">Avaliação média</div>
-            </div>
-            <div className="group">
-              <div className="text-5xl font-bold text-primary mb-2 group-hover:text-accent transition-colors duration-300">
-                95%
-              </div>
-              <div className="text-muted-foreground">Indicam para amigos</div>
             </div>
           </div>
         </div>
