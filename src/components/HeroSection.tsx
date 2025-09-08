@@ -17,7 +17,7 @@ const HeroSection = () => {
         <img 
           src={heroImage} 
           alt="Movimento e bem-estar com o símbolo X da marca Nexus representando conexão e vitalidade"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center scale-75"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/60 to-accent/70"></div>
       </div>
