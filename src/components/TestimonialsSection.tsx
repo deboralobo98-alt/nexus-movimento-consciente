@@ -134,8 +134,8 @@ const TestimonialsSection = () => {
           {/* Right Column - Stats */}
           <div className="order-1 lg:order-2 bg-card rounded-2xl p-12 shadow-medium">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-primary mb-4">
-                Resultados que Falam por Si
+              <h3 className="text-3xl font-bold text-primary mb-4 leading-tight">
+                Resultados que<br />Falam por Si
               </h3>
               <p className="text-lg text-muted-foreground">
                 Nossa dedicação se reflete na satisfação dos nossos pacientes
@@ -145,10 +145,10 @@ const TestimonialsSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
               <div className="group">
                 <div className="flex items-center justify-center mb-6">
-                  <div className="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mr-4">
+                  <div className="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mr-4 flex-shrink-0">
                     <ThumbsUp className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-6xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                  <div className="text-5xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
                     98%
                   </div>
                 </div>
@@ -156,10 +156,10 @@ const TestimonialsSection = () => {
               </div>
               <div className="group">
                 <div className="flex items-center justify-center mb-6">
-                  <div className="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mr-4">
+                  <div className="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mr-4 flex-shrink-0">
                     <TrendingUp className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-6xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                  <div className="text-5xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
                     4.9
                   </div>
                 </div>
