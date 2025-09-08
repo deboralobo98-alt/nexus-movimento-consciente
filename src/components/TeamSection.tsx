@@ -1,45 +1,54 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Mail, Phone } from 'lucide-react';
-import andreMateus from '@/assets/andre-mateus.jpg';
-import camillaPrats from '@/assets/camilla-prats.jpg';
-import andreRogerio from '@/assets/andre-rogerio.jpg';
 
 const TeamSection = () => {
   const team = [
     {
-      name: "André Mateus",
-      specialty: "Fisioterapia Esportiva",
-      image: andreMateus,
-      description: "Especialista em prevenção e reabilitação de lesões esportivas. Formado com pós-graduação em Fisioterapia Esportiva, possui vasta experiência no acompanhamento de atletas recreativos e profissionais.",
+      name: "Davi Guerreiro",
+      role: "Fisioterapeuta e Cofundador",
+      image: "/lovable-uploads/f863f7e6-52ac-4d27-bcde-816bf612edce.png",
+      description: "Referência na integração entre ciência e prática clínica, com foco em cuidado humanizado e inovação em fisioterapia.",
       expertise: [
-        "Biomecânica esportiva",
+        "Integração ciência e prática",
+        "Cuidado humanizado",
+        "Inovação em fisioterapia",
+        "Gestão clínica"
+      ]
+    },
+    {
+      name: "André Mateus de Amorim Laurentino",
+      role: "Especialista em Fisioterapia Esportiva",
+      image: "/lovable-uploads/b6dc7a40-2e0f-45b8-bfc8-2649c4e1a6e1.png",
+      description: "Especialista em fisioterapia esportiva, atua na prevenção e recuperação de atletas recreativos e de alto rendimento, ajudando-os a manter desempenho e qualidade de vida.",
+      expertise: [
+        "Fisioterapia esportiva",
         "Prevenção de lesões",
-        "Reabilitação funcional",
-        "Performance atlética"
+        "Atletas de alto rendimento",
+        "Performance e qualidade de vida"
       ]
     },
     {
-      name: "Camilla Prats",
-      specialty: "Reabilitação de Ombro",
-      image: camillaPrats,
-      description: "Especialista em disfunções do complexo do ombro. Possui formação avançada em terapia manual e técnicas específicas para tratamento conservador e pós-operatório do ombro.",
+      name: "Camilla Prats Vila",
+      role: "Especialista em Reabilitação de Ombro",
+      image: "/lovable-uploads/0eb5c253-0a11-4861-939c-99187299705e.png",
+      description: "Especialista em reabilitação de ombro, atende pacientes com lesões, pós-operatórios e limitações funcionais, com foco em devolver mobilidade e autonomia.",
       expertise: [
-        "Síndrome do impacto",
-        "Manguito rotador",
-        "Terapia manual",
-        "Pós-operatório de ombro"
+        "Reabilitação de ombro",
+        "Pós-operatórios",
+        "Limitações funcionais",
+        "Mobilidade e autonomia"
       ]
     },
     {
-      name: "André Rogério",
-      specialty: "Reabilitação de Coluna e Quadril",
-      image: andreRogerio,
-      description: "Especialista em disfunções da coluna vertebral e quadril. Formação em técnicas de estabilização segmentar e método Pilates, com foco em correção postural e fortalecimento do core.",
+      name: "André Rogério Abreu",
+      role: "Especialista em Coluna e Quadril",
+      image: "/lovable-uploads/0e966561-6870-4fba-9766-b1d7dfb5f60d.png",
+      description: "Especialista em coluna e quadril, trabalha na reabilitação de dores crônicas e pós-cirúrgicos, priorizando movimento seguro e melhora da funcionalidade.",
       expertise: [
-        "Disfunções da coluna",
+        "Reabilitação de coluna",
         "Reabilitação de quadril",
-        "Correção postural",
-        "Estabilização segmentar"
+        "Dores crônicas",
+        "Movimento seguro e funcionalidade"
       ]
     }
   ];
@@ -59,7 +68,7 @@ const TeamSection = () => {
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-16">
           {team.map((member, index) => (
             <Card 
               key={index} 
@@ -70,7 +79,7 @@ const TeamSection = () => {
                 <div className="aspect-square overflow-hidden">
                   <img 
                     src={member.image} 
-                    alt={`${member.name} - ${member.specialty}`}
+                    alt={`${member.name} - ${member.role}`}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -104,7 +113,7 @@ const TeamSection = () => {
                     {member.name}
                   </h3>
                   <p className="text-lg font-semibold text-accent">
-                    {member.specialty}
+                    {member.role}
                   </p>
                 </div>
 
