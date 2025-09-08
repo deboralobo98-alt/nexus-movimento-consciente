@@ -1,5 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, ThumbsUp, TrendingUp } from 'lucide-react';
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -137,21 +137,31 @@ const TestimonialsSection = () => {
               <h3 className="text-3xl font-bold text-primary mb-4">
                 Resultados que Falam por Si
               </h3>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-lg text-muted-foreground">
                 Nossa dedicação se reflete na satisfação dos nossos pacientes
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
               <div className="group">
-                <div className="text-6xl font-bold text-primary mb-4 group-hover:text-accent transition-colors duration-300">
-                  98%
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mr-4">
+                    <ThumbsUp className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-6xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                    98%
+                  </div>
                 </div>
                 <div className="text-lg text-muted-foreground font-medium">Taxa de satisfação</div>
               </div>
               <div className="group">
-                <div className="text-6xl font-bold text-primary mb-4 group-hover:text-accent transition-colors duration-300">
-                  4.9
+                <div className="flex items-center justify-center mb-6">
+                  <div className="w-16 h-16 gradient-secondary rounded-2xl flex items-center justify-center mr-4">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-6xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                    4.9
+                  </div>
                 </div>
                 <div className="text-lg text-muted-foreground font-medium">Avaliação média</div>
               </div>
