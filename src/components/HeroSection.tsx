@@ -23,11 +23,11 @@ const HeroSection = () => {
       </div>
 
       {/* Decorative element in left corner */}
-      <div className="absolute top-20 left-10 z-5 pointer-events-none">
+      <div className="absolute top-10 left-6 z-5 pointer-events-none">
         <img 
           src="/lovable-uploads/8a3cf4ca-48e4-4c6c-8264-13d6b7038cea.png"
           alt="Elemento decorativo"
-          className="w-40 h-40 opacity-10 object-contain"
+          className="w-20 h-20 opacity-15 object-contain"
         />
       </div>
 
