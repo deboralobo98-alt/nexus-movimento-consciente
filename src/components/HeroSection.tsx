@@ -22,8 +22,8 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/60 to-accent/70"></div>
       </div>
 
-      {/* Decorative element on left side - full height */}
-      <div className="absolute top-0 left-0 h-full z-5 pointer-events-none">
+      {/* Decorative element on left side - full height - hidden on mobile */}
+      <div className="absolute top-0 left-0 h-full z-5 pointer-events-none hidden md:block">
         <img 
           src="/lovable-uploads/a78af416-200d-4c71-8cdf-899cb2747c89.png"
           alt="Elemento decorativo lateral"
