@@ -18,10 +18,11 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 gradient-secondary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">N</span>
-              </div>
-              <span className="text-xl font-bold">Nexus Fisioterapia</span>
+              <img 
+                src="/lovable-uploads/afcf1b86-47a7-4a61-a371-577f5f2d6a25.png" 
+                alt="Nexus Fisioterapia"
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-primary-foreground/80 leading-relaxed mb-6">
               Conectando ciência, tecnologia, humanização e propósito para oferecer 
