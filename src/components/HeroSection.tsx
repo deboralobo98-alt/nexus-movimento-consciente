@@ -25,7 +25,7 @@ const HeroSection = () => {
       {/* Decorative element on left side - full height */}
       <div className="absolute top-0 -left-[350px] h-full flex items-center z-5 pointer-events-none">
         <img 
-          src="/lovable-uploads/93bdecf0-45c3-4b60-92f6-ec22fb293f30.png"
+          src="/lovable-uploads/6a4e58fd-59a1-465a-9878-3ca53a71bf98.png"
           alt="Elemento decorativo"
           className="w-[500px] h-full opacity-15 object-cover"
         />
