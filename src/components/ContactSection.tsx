@@ -1,60 +1,15 @@
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
 import { 
   MapPin, 
   Phone, 
   MessageCircle, 
   Mail, 
   Clock,
-  Send,
   CheckCircle
 } from 'lucide-react';
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    service: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset form after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        phone: '',
-        email: '',
-        service: '',
-        message: ''
-      });
-    }, 3000);
-  };
 
   const contactInfo = [
     {
@@ -117,120 +72,80 @@ const ContactSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
+          {/* WhatsApp Contact */}
           <Card className="border-0 shadow-medium bg-card">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-primary mb-6">
-                Solicite seu Agendamento
-              </h3>
-              
-              {isSubmitted ? (
-                <div className="text-center py-12">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-green-500/10 rounded-full mb-6">
-                    <CheckCircle className="w-8 h-8 text-green-500" />
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-primary mb-6">
+                  Agende pelo WhatsApp
+                </h3>
+                
+                <div className="bg-gradient-to-br from-green-500/10 to-green-600/10 rounded-2xl p-8 mb-8 border border-green-500/20">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-green-500 rounded-full mb-6">
+                    <MessageCircle className="w-10 h-10 text-white" />
                   </div>
-                  <h4 className="text-xl font-bold text-primary mb-2">Mensagem Enviada!</h4>
-                  <p className="text-muted-foreground">
-                    Entraremos em contato em breve para confirmar seu agendamento.
+                  
+                  <h4 className="text-xl font-bold text-primary mb-4">
+                    Atendimento Rápido e Prático
+                  </h4>
+                  
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    Entre em contato conosco pelo WhatsApp para agendar sua consulta de forma rápida e prática. 
+                    Nossa equipe está pronta para atendê-lo e esclarecer todas as suas dúvidas.
                   </p>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">Nome Completo *</Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        placeholder="Seu nome completo"
-                        required
-                        className="mt-2"
-                      />
+                  
+                  <div className="space-y-4 mb-8">
+                    <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
+                      <div className="flex items-center">
+                        <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                        Agendamento rápido
+                      </div>
+                      <div className="flex items-center">
+                        <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                        Atendimento humanizado
+                      </div>
                     </div>
-                    <div>
-                      <Label htmlFor="phone">Telefone *</Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        placeholder="(48) 3206-8868"
-                        required
-                        className="mt-2"
-                      />
+                    <div className="flex items-center justify-center space-x-4 text-sm text-muted-foreground">
+                      <div className="flex items-center">
+                        <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                        Esclarecimento de dúvidas
+                      </div>
+                      <div className="flex items-center">
+                        <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
+                        Disponível 6 dias por semana
+                      </div>
                     </div>
                   </div>
-
-                  <div>
-                    <Label htmlFor="email">E-mail</Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="seu@email.com"
-                      className="mt-2"
-                    />
-                  </div>
-
-                  <div>
-                    <Label htmlFor="service">Serviço de Interesse</Label>
-                    <select
-                      id="service"
-                      name="service"
-                      value={formData.service}
-                      onChange={handleInputChange}
-                      className="mt-2 w-full px-3 py-2 border border-input rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                    >
-                      <option value="">Selecione um serviço</option>
-                      {services.map((service, index) => (
-                        <option key={index} value={service}>{service}</option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="message">Mensagem</Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      placeholder="Conte-nos sobre sua condição ou dúvidas..."
-                      rows={4}
-                      className="mt-2"
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit" 
-                    variant="appointment" 
-                    size="lg"
-                    disabled={isSubmitting}
-                    className="w-full"
+                  
+                  <a 
+                    href="https://wa.me/5548999999999?text=Olá! Gostaria de agendar uma consulta na Nexus Fisioterapia." 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block w-full"
                   >
-                    {isSubmitting ? (
-                      <>
-                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
-                        Enviando...
-                      </>
-                    ) : (
-                      <>
-                        Enviar Solicitação
-                        <Send className="w-4 h-4" />
-                      </>
-                    )}
-                  </Button>
-
-                  <p className="text-sm text-muted-foreground text-center">
-                    * Campos obrigatórios. Entraremos em contato em até 24 horas.
-                  </p>
-                </form>
-              )}
+                    <Button 
+                      variant="appointment" 
+                      size="lg"
+                      className="w-full text-lg py-6 h-auto rounded-full shadow-2xl hover:shadow-green-500/30 transform hover:scale-105 transition-all duration-500 font-medium bg-green-500 hover:bg-green-600"
+                    >
+                      <MessageCircle className="w-6 h-6 mr-3" />
+                      Agendar pelo WhatsApp
+                    </Button>
+                  </a>
+                </div>
+                
+                <div className="bg-muted/50 rounded-xl p-6">
+                  <h5 className="font-semibold text-primary mb-3">Nossos Serviços:</h5>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-muted-foreground">
+                    {services.map((service, index) => (
+                      <div key={index} className="flex items-center">
+                        <div className="w-2 h-2 bg-accent rounded-full mr-2 flex-shrink-0"></div>
+                        {service}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
 
