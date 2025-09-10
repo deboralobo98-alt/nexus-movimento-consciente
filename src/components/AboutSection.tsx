@@ -195,10 +195,10 @@ const AboutSection = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
                 {/* Equipe Multidisciplinar */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 text-center border border-white/20 hover:bg-white/15 transition-all duration-300 group">
-                  <div className="w-24 h-24 bg-white/20 rounded-2xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Users className="w-12 h-12 text-white" />
+                  <div className="w-20 h-20 bg-white/20 rounded-2xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-10 h-10 text-white" />
                   </div>
-                  <div className="text-6xl font-bold mb-4 text-white">4</div>
+                  <div className="text-5xl font-bold mb-4 text-white">4</div>
                   <h4 className="text-2xl font-bold mb-4 text-white">Especialistas</h4>
                   <p className="text-lg text-white/80 mb-6 leading-relaxed">
                     Equipe multidisciplinar especializada em diferentes áreas da fisioterapia
@@ -221,10 +221,10 @@ const AboutSection = () => {
 
                 {/* Pacientes Atendidos */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-12 text-center border border-white/20 hover:bg-white/15 transition-all duration-300 group">
-                  <div className="w-24 h-24 bg-white/20 rounded-2xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <UserCheck className="w-12 h-12 text-white" />
+                  <div className="w-20 h-20 bg-white/20 rounded-2xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <UserCheck className="w-10 h-10 text-white" />
                   </div>
-                  <div className="text-6xl font-bold mb-4 text-white">+8000</div>
+                  <div className="text-5xl font-bold mb-4 text-white">+8000</div>
                   <h4 className="text-2xl font-bold mb-4 text-white">Pacientes Atendidos</h4>
                   <p className="text-lg text-white/80 mb-6 leading-relaxed">
                     Mais de 500 vidas transformadas através de cuidado especializado e humanizado

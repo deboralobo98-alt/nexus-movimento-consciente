@@ -159,16 +159,16 @@ const TeamSection = () => {
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 gradient-secondary rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">100%</span>
+              <div className="w-20 h-16 gradient-secondary rounded-xl mx-auto mb-4 flex items-center justify-center">
+                <span className="text-xl font-bold text-white">100%</span>
               </div>
               <h4 className="font-bold text-primary mb-2">Dedicação</h4>
               <p className="text-muted-foreground">Comprometimento total com seus resultados</p>
             </div>
             
             <div className="text-center">
-              <div className="w-16 h-16 gradient-secondary rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">∞</span>
+              <div className="w-20 h-16 gradient-secondary rounded-xl mx-auto mb-4 flex items-center justify-center">
+                <span className="text-xl font-bold text-white">∞</span>
               </div>
               <h4 className="font-bold text-primary mb-2">Aprendizado</h4>
               <p className="text-muted-foreground">Sempre atualizados com as melhores práticas</p>
