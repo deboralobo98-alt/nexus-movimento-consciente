@@ -52,7 +52,7 @@ const HeroSection = () => {
             <span className="block font-extralight animate-fade-in-up">Sua jornada</span>
             <span className="block text-accent text-4xl md:text-5xl lg:text-6xl font-bold animate-fade-in-up animation-delay-200">de recuperação</span>
             <span className="block text-2xl md:text-3xl lg:text-4xl font-light mt-4 text-white/95 animate-fade-in-up animation-delay-400">
-              começa com especialistas dedicados
+              começa com profissionais capacitados e dedicados
             </span>
           </h1>
 
