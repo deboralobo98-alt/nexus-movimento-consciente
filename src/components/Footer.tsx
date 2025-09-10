@@ -160,11 +160,11 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
             <div className="bg-primary-foreground/10 rounded-lg p-4">
               <div className="font-semibold mb-1">Segunda a Sexta</div>
-              <div className="text-accent">07:00 - 19:00</div>
+              <div className="text-accent">08:00 - 19:00</div>
             </div>
             <div className="bg-primary-foreground/10 rounded-lg p-4">
               <div className="font-semibold mb-1">Sábado</div>
-              <div className="text-accent">08:00 - 12:00</div>
+              <div className="text-primary-foreground/60">Fechado</div>
             </div>
             <div className="bg-primary-foreground/10 rounded-lg p-4">
               <div className="font-semibold mb-1">Domingo</div>
