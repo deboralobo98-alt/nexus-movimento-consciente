@@ -112,7 +112,7 @@ const ContactSection = () => {
                       </div>
                       <div className="flex items-center">
                         <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                        Disponível 6 dias por semana
+                        Disponível 5 dias por semana
                       </div>
                     </div>
                   </div>
