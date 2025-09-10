@@ -224,7 +224,7 @@ const AboutSection = () => {
                   <div className="w-24 h-24 bg-white/20 rounded-2xl mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <UserCheck className="w-12 h-12 text-white" />
                   </div>
-                  <div className="text-6xl font-bold mb-4 text-white">+500</div>
+                  <div className="text-6xl font-bold mb-4 text-white">+8000</div>
                   <h4 className="text-2xl font-bold mb-4 text-white">Pacientes Atendidos</h4>
                   <p className="text-lg text-white/80 mb-6 leading-relaxed">
                     Mais de 500 vidas transformadas através de cuidado especializado e humanizado
