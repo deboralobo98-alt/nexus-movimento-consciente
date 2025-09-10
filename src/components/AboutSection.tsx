@@ -203,18 +203,18 @@ const AboutSection = () => {
                   <p className="text-lg text-white/80 mb-6 leading-relaxed">
                     Equipe multidisciplinar especializada em diferentes áreas da fisioterapia
                   </p>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <span className="font-medium">Fisioterapia Esportiva</span>
+                  <div className="grid grid-cols-2 gap-3 text-xs">
+                    <div className="bg-white/10 rounded-lg p-3 text-center">
+                      <span className="font-medium leading-tight">Fisioterapia Esportiva</span>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <span className="font-medium">Reabilitação de Ombro</span>
+                    <div className="bg-white/10 rounded-lg p-3 text-center">
+                      <span className="font-medium leading-tight">Reabilitação de Ombro</span>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <span className="font-medium">Coluna e Quadril</span>
+                    <div className="bg-white/10 rounded-lg p-3 text-center">
+                      <span className="font-medium leading-tight">Coluna e Quadril</span>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-3">
-                      <span className="font-medium">Cuidado Integral</span>
+                    <div className="bg-white/10 rounded-lg p-3 text-center">
+                      <span className="font-medium leading-tight">Cuidado Integral</span>
                     </div>
                   </div>
                 </div>
