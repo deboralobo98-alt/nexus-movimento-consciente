@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="/lovable-uploads/08e50fab-edc8-4e22-81de-4e93076466df.png" 
+                src="/lovable-uploads/da52acbd-9df7-4eef-b616-5a5f275e7dbb.png" 
                 alt="Nexus Fisioterapia"
                 className="h-12 w-auto"
               />
