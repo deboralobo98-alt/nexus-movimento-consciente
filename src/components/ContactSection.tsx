@@ -43,8 +43,8 @@ const ContactSection = () => {
   ];
 
   const openingHours = [
-    { day: "Segunda a Sexta", hours: "07:00 - 19:00" },
-    { day: "Sábado", hours: "08:00 - 12:00" },
+    { day: "Segunda a Sexta", hours: "08:00 - 19:00" },
+    { day: "Sábado", hours: "Fechado" },
     { day: "Domingo", hours: "Fechado" }
   ];
 
