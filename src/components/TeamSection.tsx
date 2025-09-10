@@ -152,7 +152,7 @@ const TeamSection = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 gradient-secondary rounded-xl mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl font-bold text-white">+500</span>
+                <span className="text-2xl font-bold text-white">+8000</span>
               </div>
               <h4 className="font-bold text-primary mb-2">Pacientes Atendidos</h4>
               <p className="text-muted-foreground">Uma equipe consolidada e experiente</p>
