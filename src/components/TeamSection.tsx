@@ -12,7 +12,7 @@ const TeamSection = () => {
         "Integração ciência e prática",
         "Cuidado humanizado",
         "Inovação em fisioterapia",
-        "Gestão clínica"
+        "Ampla experiência no pós operatório de quadril, joelho e tornozelo."
       ]
     },
     {
