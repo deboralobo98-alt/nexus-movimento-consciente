@@ -204,17 +204,17 @@ const AboutSection = () => {
                     Equipe multidisciplinar especializada em diferentes áreas da fisioterapia
                   </p>
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="bg-white/10 rounded-lg p-2 text-center">
-                      <span className="text-[10px] font-medium leading-tight whitespace-nowrap">Fisioterapia Esportiva</span>
+                    <div className="bg-white/10 rounded-lg p-4 min-h-[3rem] text-center flex items-center justify-center">
+                      <span className="text-xs font-medium leading-tight">Fisioterapia Esportiva</span>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-2 text-center">
-                      <span className="text-[10px] font-medium leading-tight whitespace-nowrap">Reabilitação de Ombro</span>
+                    <div className="bg-white/10 rounded-lg p-4 min-h-[3rem] text-center flex items-center justify-center">
+                      <span className="text-xs font-medium leading-tight">Reabilitação de Ombro</span>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-2 text-center">
-                      <span className="text-[10px] font-medium leading-tight whitespace-nowrap">Coluna e Quadril</span>
+                    <div className="bg-white/10 rounded-lg p-4 min-h-[3rem] text-center flex items-center justify-center">
+                      <span className="text-xs font-medium leading-tight">Coluna e Quadril</span>
                     </div>
-                    <div className="bg-white/10 rounded-lg p-2 text-center">
-                      <span className="text-[10px] font-medium leading-tight whitespace-nowrap">Cuidado Integral</span>
+                    <div className="bg-white/10 rounded-lg p-4 min-h-[3rem] text-center flex items-center justify-center">
+                      <span className="text-xs font-medium leading-tight">Cuidado Integral</span>
                     </div>
                   </div>
                 </div>
