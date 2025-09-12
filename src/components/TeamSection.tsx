@@ -7,7 +7,7 @@ const TeamSection = () => {
       name: "Davi Guerreiro Marostica",
       role: "Especialista em tratamento da dor e movimento",
       image: "/lovable-uploads/f863f7e6-52ac-4d27-bcde-816bf612edce.png",
-      description: "Referência na integração entre ciência e prática clínica, com foco em cuidado humanizado e inovação em fisioterapia.",
+      description: "Referência na integração entre ciência e prática clínica, com foco em certificações no método Mckenzie e inovação em fisioterapia.",
       expertise: [
         "Integração ciência e prática",
         "Cuidado humanizado",
