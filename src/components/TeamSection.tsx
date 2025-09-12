@@ -5,7 +5,7 @@ const TeamSection = () => {
   const team = [
     {
       name: "Davi Guerreiro Marostica",
-      role: "Especialista em tratamento da dor e movimento",
+      role: "Expert em tratamento da dor e movimento",
       image: "/lovable-uploads/f863f7e6-52ac-4d27-bcde-816bf612edce.png",
       description: "Referência na integração entre ciência e prática clínica, com foco em certificações no método Mckenzie e inovação em fisioterapia.",
       expertise: [
@@ -17,7 +17,7 @@ const TeamSection = () => {
     },
     {
       name: "André Mateus de Amorim Laurentino",
-      role: "Especialista em Fisioterapia Esportiva",
+      role: "Expert em Fisioterapia Esportiva",
       image: "/lovable-uploads/0e966561-6870-4fba-9766-b1d7dfb5f60d.png",
       description: "Especialista em fisioterapia esportiva, atua na prevenção e recuperação de atletas recreativos e de alto rendimento, ajudando-os a manter desempenho e qualidade de vida.",
       expertise: [
@@ -29,7 +29,7 @@ const TeamSection = () => {
     },
     {
       name: "Camilla Prats Vila",
-      role: "Especialista em Reabilitação de Ombro",
+      role: "Expert em Reabilitação de Ombro",
       image: "/lovable-uploads/0eb5c253-0a11-4861-939c-99187299705e.png",
       description: "Especialista em reabilitação de ombro, atende pacientes com lesões, pós-operatórios e limitações funcionais, com foco em devolver mobilidade e autonomia.",
       expertise: [
@@ -41,7 +41,7 @@ const TeamSection = () => {
     },
     {
       name: "André Rogério Abreu",
-      role: "Especialista em Coluna e Quadril",
+      role: "Expert em Coluna e Quadril",
       image: "/lovable-uploads/b6dc7a40-2e0f-45b8-bfc8-2649c4e1a6e1.png",
       description: "Especialista em coluna e quadril, trabalha na reabilitação de dores crônicas e pós-cirúrgicos, priorizando movimento seguro e melhora da funcionalidade.",
       expertise: [
