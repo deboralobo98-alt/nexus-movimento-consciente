@@ -76,7 +76,7 @@ const AboutSection = () => {
                 <p>
                   A Clínica Nexus nasceu em um dos períodos mais desafiadores da nossa geração: a pandemia. 
                   Naquele momento de incertezas, quatro amigos — <span className="font-semibold text-primary">Davi Guerreiro</span>, 
-                  <span className="font-semibold text-primary"> André Matheus</span>, <span className="font-semibold text-primary">Camilla Prats</span> e 
+                  <span className="font-semibold text-primary"> André Mateus</span>, <span className="font-semibold text-primary">Camilla Prats</span> e 
                   <span className="font-semibold text-primary"> André Rogério</span> — que já trabalhavam juntos decidiram unir forças 
                   para transformar dificuldade em oportunidade.
                 </p>
