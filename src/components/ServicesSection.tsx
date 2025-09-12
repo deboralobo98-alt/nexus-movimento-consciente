@@ -139,12 +139,12 @@ const ServicesSection = () => {
               Nossa equipe especializada está preparada para cuidar da sua saúde com o máximo de dedicação e profissionalismo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:+5548999999999">
+              <a href="tel:+5548991820345">
                 <button className="px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-smooth font-semibold shadow-soft hover:shadow-medium">
                   Ligar Agora
                 </button>
               </a>
-              <a href="https://wa.me/5548999999999" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
                 <button className="px-8 py-4 gradient-secondary text-white rounded-lg hover:scale-105 transition-bounce font-semibold shadow-soft hover:shadow-medium">
                   WhatsApp
                 </button>

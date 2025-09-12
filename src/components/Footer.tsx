@@ -119,7 +119,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
                 <a 
-                  href="tel:+554832068868" 
+                  href="tel:+5548991820345" 
                   className="text-primary-foreground/80 hover:text-accent transition-smooth text-sm"
                 >
                   (48) 3206-8868
@@ -129,7 +129,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-5 h-5 text-accent flex-shrink-0" />
                 <a 
-                  href="https://wa.me/5548999999999" 
+                  href="https://wa.me/5548991820345" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary-foreground/80 hover:text-accent transition-smooth text-sm"

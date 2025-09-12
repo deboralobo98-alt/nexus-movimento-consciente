@@ -180,12 +180,12 @@ const TestimonialsSection = () => {
               Sua recuperação começa com o primeiro passo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://wa.me/5548999999999" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
                 <button className="px-8 py-4 bg-white text-primary rounded-lg hover:bg-white/90 transition-smooth font-semibold shadow-soft hover:shadow-medium">
                   Falar no WhatsApp
                 </button>
               </a>
-              <a href="tel:+5548999999999">
+              <a href="tel:+5548991820345">
                 <button className="px-8 py-4 bg-white/20 text-white border border-white/30 rounded-lg hover:bg-white/30 transition-smooth font-semibold">
                   Ligar Agora
                 </button>

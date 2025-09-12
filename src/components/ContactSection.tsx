@@ -16,14 +16,14 @@ const ContactSection = () => {
       icon: Phone,
       title: "Telefone",
       content: "(48) 3206-8868",
-      link: "tel:+554832068868",
+      link: "tel:+5548991820345",
       description: "Ligue para agendamento"
     },
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      content: "(48) 99999-9999",
-      link: "https://wa.me/5548999999999",
+      content: "(48) 99182-0345",
+      link: "https://wa.me/5548991820345",
       description: "Atendimento rápido e prático"
     },
     {
@@ -118,7 +118,7 @@ const ContactSection = () => {
                   </div>
                   
                   <a 
-                    href="https://wa.me/5548999999999?text=Olá! Gostaria de agendar uma consulta na Nexus Fisioterapia." 
+                    href="https://wa.me/5548991820345?text=Olá! Gostaria de agendar uma consulta na Nexus Fisioterapia." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block w-full"
@@ -232,13 +232,13 @@ const ContactSection = () => {
                 Nossa equipe está preparada para atendê-lo quando você mais precisar.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+554832068868">
+                <a href="tel:+5548991820345">
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
                     <Phone className="w-5 h-5" />
                     Ligar Agora
                   </Button>
                 </a>
-                <a href="https://wa.me/5548999999999" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp 24h

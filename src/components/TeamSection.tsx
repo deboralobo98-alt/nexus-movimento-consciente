@@ -97,7 +97,7 @@ const TeamSection = () => {
                       <Mail className="w-4 h-4" />
                     </a>
                     <a 
-                      href="tel:+5548999999999" 
+                      href="tel:+5548991820345" 
                       className="p-2 bg-white/20 rounded-full hover:bg-white/30 transition-colors"
                     >
                       <Phone className="w-4 h-4" />
