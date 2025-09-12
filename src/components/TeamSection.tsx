@@ -10,7 +10,7 @@ const TeamSection = () => {
       description: "Referência na integração entre ciência e prática clínica, com foco em certificações no método Mckenzie e inovação em fisioterapia.",
       expertise: [
         "Integração ciência e prática",
-        "Cuidado humanizado",
+        "Certificações no método Mckenzie",
         "Inovação em fisioterapia",
         "Ampla experiência no pós operatório de quadril, joelho e tornozelo."
       ]
