@@ -75,7 +75,7 @@ const Header = () => {
               <span>(48) 3206-8868</span>
             </a>
             <a 
-              href="https://wa.me/554899182034"
+              href="https://wa.me/5548991820345"
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-sm text-accent hover:text-accent/80 transition-smooth"
@@ -149,7 +149,7 @@ const Header = () => {
                   <span>(48) 3206-8868</span>
                 </a>
                 <a 
-                  href="https://wa.me/554899182034" 
+                  href="https://wa.me/5548991820345" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-sm text-accent"

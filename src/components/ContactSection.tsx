@@ -23,7 +23,7 @@ const ContactSection = () => {
       icon: MessageCircle,
       title: "WhatsApp",
       content: "(48) 99182-0345",
-      link: "https://wa.me/554899182034",
+      link: "https://wa.me/5548991820345",
       description: "Atendimento rápido e prático"
     },
     {
@@ -118,7 +118,7 @@ const ContactSection = () => {
                   </div>
                   
                   <a 
-                    href="https://wa.me/554899182034?text=Olá! Gostaria de agendar uma consulta na Nexus Fisioterapia." 
+                    href="https://wa.me/5548991820345?text=Olá! Gostaria de agendar uma consulta na Nexus Fisioterapia." 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block w-full"
@@ -238,7 +238,7 @@ const ContactSection = () => {
                     Ligar Agora
                   </Button>
                 </a>
-                <a href="https://wa.me/554899182034" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp 24h
