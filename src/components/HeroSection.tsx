@@ -75,7 +75,7 @@ const HeroSection = () => {
               <ArrowRight className="w-5 h-5 ml-2" />
             </Button>
             <a 
-              href="https://wa.me/5548991820345" 
+              href="https://wa.me/554899182034" 
               target="_blank" 
               rel="noopener noreferrer"
             >

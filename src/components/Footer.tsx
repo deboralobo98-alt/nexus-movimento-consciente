@@ -129,7 +129,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <MessageCircle className="w-5 h-5 text-accent flex-shrink-0" />
                 <a 
-                  href="https://wa.me/5548991820345" 
+                  href="https://wa.me/554899182034" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-primary-foreground/80 hover:text-accent transition-smooth text-sm"
