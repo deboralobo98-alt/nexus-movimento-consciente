@@ -238,12 +238,6 @@ const ContactSection = () => {
                     Ligar Agora
                   </Button>
                 </a>
-                <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
-                    <MessageCircle className="w-5 h-5" />
-                    WhatsApp 24h
-                  </Button>
-                </a>
               </div>
             </CardContent>
           </Card>
