@@ -183,7 +183,7 @@ const Footer = () => {
             </div>
             
             <div className="text-primary-foreground/60 text-sm text-center md:text-right">
-              <p>CREFITO: 123456-F | CNPJ: 12.345.678/0001-90</p>
+              <p>CREFITO: 282489-F</p>
             </div>
           </div>
           
