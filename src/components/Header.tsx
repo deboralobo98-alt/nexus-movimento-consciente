@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, MessageCircle } from 'lucide-react';
+import { trackAppointmentClick, trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,7 +71,11 @@ const Header = () => {
 
           {/* Contact Actions */}
           <div className="hidden md:flex items-center space-x-3">
-            <a href="tel:+5548991820345" className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-smooth">
+            <a 
+              href="tel:+5548991820345" 
+              className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-smooth"
+              onClick={() => trackPhoneClick('header')}
+            >
               <Phone className="w-4 h-4" />
               <span>(48) 3206-8868</span>
             </a>
@@ -79,6 +84,7 @@ const Header = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-sm text-accent hover:text-accent/80 transition-smooth"
+              onClick={() => trackWhatsAppClick('header')}
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
@@ -86,7 +92,10 @@ const Header = () => {
             <Button 
               variant="appointment" 
               size="sm"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => {
+                trackAppointmentClick('header');
+                scrollToSection('contact');
+              }}
             >
               Agendar Consulta
             </Button>
@@ -144,7 +153,11 @@ const Header = () => {
               
               {/* Mobile Contact Actions */}
               <div className="px-4 py-2 space-y-3 border-t border-border mt-4 pt-4">
-                <a href="tel:+5548991820345" className="flex items-center space-x-2 text-sm text-muted-foreground">
+                <a 
+                  href="tel:+5548991820345" 
+                  className="flex items-center space-x-2 text-sm text-muted-foreground"
+                  onClick={() => trackPhoneClick('header_mobile')}
+                >
                   <Phone className="w-4 h-4" />
                   <span>(48) 3206-8868</span>
                 </a>
@@ -153,6 +166,7 @@ const Header = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-sm text-accent"
+                  onClick={() => trackWhatsAppClick('header_mobile')}
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>WhatsApp</span>
@@ -161,7 +175,10 @@ const Header = () => {
                   variant="appointment" 
                   size="sm" 
                   className="w-full"
-                  onClick={() => scrollToSection('contact')}
+                  onClick={() => {
+                    trackAppointmentClick('header_mobile');
+                    scrollToSection('contact');
+                  }}
                 >
                   Agendar Consulta
                 </Button>

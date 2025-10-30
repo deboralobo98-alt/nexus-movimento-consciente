@@ -1,13 +1,19 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Heart, Award, Users, Play } from 'lucide-react';
 import heroImage from '@/assets/hero-dynamic.jpg';
+import { trackAppointmentClick, trackWhatsAppClick } from '@/lib/analytics';
 
 const HeroSection = () => {
   const scrollToContact = () => {
+    trackAppointmentClick('hero_section');
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleWhatsAppClick = () => {
+    trackWhatsAppClick('hero_section');
   };
 
   return (
@@ -78,6 +84,7 @@ const HeroSection = () => {
               href="https://wa.me/5548991820345" 
               target="_blank" 
               rel="noopener noreferrer"
+              onClick={handleWhatsAppClick}
             >
               <Button 
                 variant="outline" 

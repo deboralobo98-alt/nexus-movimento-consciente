@@ -8,6 +8,7 @@ import {
   Clock,
   CheckCircle
 } from 'lucide-react';
+import { trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics';
 
 const ContactSection = () => {
 
@@ -122,6 +123,7 @@ const ContactSection = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block w-full"
+                    onClick={() => trackWhatsAppClick('contact_section')}
                   >
                     <Button 
                       variant="appointment" 
@@ -232,7 +234,7 @@ const ContactSection = () => {
                 Nossa equipe está preparada para atendê-lo quando você mais precisar.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+5548991820345">
+                <a href="tel:+5548991820345" onClick={() => trackPhoneClick('emergency_section')}>
                   <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
                     <Phone className="w-5 h-5" />
                     Ligar Agora
