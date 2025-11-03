@@ -32,6 +32,29 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
+    <!-- WhatsApp Link Click Tracker -->
+    <script>
+    document.addEventListener('click', function(e) {
+      var el = e.target;
+      while (el && el !== document) {
+        if (el.tagName && el.tagName.toLowerCase() === 'a') {
+          var href = el.getAttribute('href') || '';
+          if (href.indexOf('wa.me') > -1 || href.indexOf('api.whatsapp.com') > -1) {
+            // envia pro Google Tag Manager
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'click_whatsapp',
+              link_url: href,
+              link_text: (el.textContent || '').trim()
+            });
+          }
+          break;
+        }
+        el = el.parentNode;
+      }
+    }, true);
+    </script>
+    
     <div id="root"></div>
 
     <script src="https://unpkg.com/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
