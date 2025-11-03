@@ -37,5 +37,100 @@
     <script src="https://unpkg.com/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Enhanced Event Tracking Script -->
+    <script>
+    window.addEventListener('load', function() {
+      console.log('🔍 Iniciando rastreamento de eventos...');
+      
+      // Função para adicionar listeners aos elementos
+      function addEventListeners() {
+        // Encontrar todos os botões e links
+        const elements = document.querySelectorAll('button, a, [role="button"]');
+        
+        elements.forEach(function(element) {
+          const text = element.textContent.toLowerCase();
+          const hasWhatsApp = text.includes('whatsapp');
+          const hasPhone = text.includes('telefone') || text.includes('ligar') || text.includes('phone');
+          const hasAppointment = text.includes('agendar') || text.includes('consulta') || text.includes('appointment');
+          
+          // Se o elemento já tem listener, pular
+          if (element.dataset.tracked) return;
+          
+          if (hasWhatsApp || hasPhone || hasAppointment) {
+            element.dataset.tracked = 'true';
+            
+            element.addEventListener('click', function(e) {
+              console.log('🎯 Clique detectado:', element.textContent.trim());
+              
+              let eventName = 'click_event';
+              let eventLabel = 'generic_click';
+              
+              if (hasWhatsApp) {
+                eventName = 'whatsapp_click';
+                eventLabel = 'botao_whatsapp';
+              } else if (hasPhone) {
+                eventName = 'phone_click';
+                eventLabel = 'botao_telefone';
+              } else if (hasAppointment) {
+                eventName = 'appointment_click';
+                eventLabel = 'botao_agendamento';
+              }
+              
+              // Enviar para GA4
+              if (typeof gtag !== 'undefined') {
+                gtag('event', eventName, {
+                  'event_category': 'engagement',
+                  'event_label': eventLabel,
+                  'page_location': window.location.href,
+                  'button_text': element.textContent.trim()
+                });
+                console.log('✅ Evento enviado para GA4:', eventName);
+              }
+              
+              // Enviar para dataLayer do GTM
+              if (typeof window.dataLayer !== 'undefined') {
+                window.dataLayer.push({
+                  'event': eventName,
+                  'event_category': 'engagement',
+                  'event_label': eventLabel,
+                  'button_text': element.textContent.trim(),
+                  'page_location': window.location.href
+                });
+                console.log('✅ Evento enviado para dataLayer:', eventName);
+              } else {
+                console.warn('⚠️ dataLayer não encontrado');
+              }
+            });
+            
+            console.log('👂 Listener adicionado:', element.textContent.trim());
+          }
+        });
+      }
+      
+      // Adicionar listeners inicialmente após um delay
+      setTimeout(function() {
+        console.log('⏱️ Primeira varredura de elementos...');
+        addEventListeners();
+      }, 2000);
+      
+      // Observar mudanças no DOM para capturar elementos adicionados dinamicamente
+      const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.addedNodes.length) {
+            addEventListeners();
+          }
+        });
+      });
+      
+      // Iniciar observação do DOM
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      console.log('✅ Observador de DOM iniciado');
+    });
+    </script>
   </body>
 </html>
