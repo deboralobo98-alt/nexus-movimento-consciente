@@ -32,27 +32,116 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     
-    <!-- WhatsApp Link Click Tracker -->
+    <!-- Enhanced Click Tracker for GTM -->
     <script>
+    console.log('🚀 Inicializando rastreador de cliques...');
+    
     document.addEventListener('click', function(e) {
-      var el = e.target;
+      console.log('🔍 Clique detectado em:', e.target);
+      
+      var clickedElement = e.target;
+      var whatsappLink = null;
+      var phoneLink = null;
+      var isWhatsAppRelated = false;
+      var isPhoneRelated = false;
+      var isAppointmentRelated = false;
+      
+      // Percorrer a árvore DOM do elemento clicado até o topo
+      var el = clickedElement;
       while (el && el !== document) {
-        if (el.tagName && el.tagName.toLowerCase() === 'a') {
-          var href = el.getAttribute('href') || '';
-          if (href.indexOf('wa.me') > -1 || href.indexOf('api.whatsapp.com') > -1) {
-            // envia pro Google Tag Manager
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-              event: 'click_whatsapp',
-              link_url: href,
-              link_text: (el.textContent || '').trim()
-            });
-          }
-          break;
+        var text = (el.textContent || '').toLowerCase();
+        var href = '';
+        
+        // Obter href de forma segura
+        if (el.getAttribute) {
+          href = el.getAttribute('href') || '';
         }
+        
+        // Verificar se é link do WhatsApp
+        if (href.indexOf('wa.me') > -1 || href.indexOf('api.whatsapp.com') > -1) {
+          whatsappLink = href;
+          isWhatsAppRelated = true;
+          console.log('📱 Link WhatsApp encontrado:', href);
+        }
+        
+        // Verificar se é link de telefone
+        if (href.indexOf('tel:') > -1) {
+          phoneLink = href;
+          isPhoneRelated = true;
+          console.log('📞 Link telefone encontrado:', href);
+        }
+        
+        // Verificar pelo texto do elemento
+        if (text.includes('whatsapp')) {
+          isWhatsAppRelated = true;
+          console.log('📱 Texto WhatsApp encontrado');
+        }
+        
+        if (text.includes('telefone') || text.includes('ligar') || text.includes('phone')) {
+          isPhoneRelated = true;
+          console.log('📞 Texto telefone encontrado');
+        }
+        
+        if (text.includes('agendar') || text.includes('consulta') || text.includes('appointment')) {
+          isAppointmentRelated = true;
+          console.log('📅 Texto agendamento encontrado');
+        }
+        
         el = el.parentNode;
       }
+      
+      // Inicializar dataLayer se não existir
+      window.dataLayer = window.dataLayer || [];
+      
+      // Enviar evento para WhatsApp
+      if (isWhatsAppRelated) {
+        console.log('✅ ENVIANDO EVENTO: click_whatsapp');
+        window.dataLayer.push({
+          event: 'click_whatsapp',
+          event_category: 'engagement',
+          event_label: 'botao_whatsapp',
+          link_url: whatsappLink || 'no_direct_link',
+          link_text: (clickedElement.textContent || '').trim(),
+          page_location: window.location.href
+        });
+        console.log('📊 Evento click_whatsapp enviado para dataLayer');
+      }
+      
+      // Enviar evento para telefone
+      if (isPhoneRelated && !isWhatsAppRelated) {
+        console.log('✅ ENVIANDO EVENTO: click_phone');
+        window.dataLayer.push({
+          event: 'click_phone',
+          event_category: 'engagement',
+          event_label: 'botao_telefone',
+          link_url: phoneLink || 'no_direct_link',
+          link_text: (clickedElement.textContent || '').trim(),
+          page_location: window.location.href
+        });
+        console.log('📊 Evento click_phone enviado para dataLayer');
+      }
+      
+      // Enviar evento para agendamento
+      if (isAppointmentRelated && !isWhatsAppRelated && !isPhoneRelated) {
+        console.log('✅ ENVIANDO EVENTO: click_appointment');
+        window.dataLayer.push({
+          event: 'click_appointment',
+          event_category: 'engagement',
+          event_label: 'botao_agendamento',
+          link_text: (clickedElement.textContent || '').trim(),
+          page_location: window.location.href
+        });
+        console.log('📊 Evento click_appointment enviado para dataLayer');
+      }
+      
+      // Mostrar estado atual do dataLayer
+      if (isWhatsAppRelated || isPhoneRelated || isAppointmentRelated) {
+        console.log('📊 dataLayer atual:', window.dataLayer);
+      }
+      
     }, true);
+    
+    console.log('✅ Rastreador de cliques ativo');
     </script>
     
     <div id="root"></div>
@@ -60,100 +149,5 @@
     <script src="https://unpkg.com/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 
     <script type="module" src="/src/main.tsx"></script>
-
-    <!-- Enhanced Event Tracking Script -->
-    <script>
-    window.addEventListener('load', function() {
-      console.log('🔍 Iniciando rastreamento de eventos...');
-      
-      // Função para adicionar listeners aos elementos
-      function addEventListeners() {
-        // Encontrar todos os botões e links
-        const elements = document.querySelectorAll('button, a, [role="button"]');
-        
-        elements.forEach(function(element) {
-          const text = element.textContent.toLowerCase();
-          const hasWhatsApp = text.includes('whatsapp');
-          const hasPhone = text.includes('telefone') || text.includes('ligar') || text.includes('phone');
-          const hasAppointment = text.includes('agendar') || text.includes('consulta') || text.includes('appointment');
-          
-          // Se o elemento já tem listener, pular
-          if (element.dataset.tracked) return;
-          
-          if (hasWhatsApp || hasPhone || hasAppointment) {
-            element.dataset.tracked = 'true';
-            
-            element.addEventListener('click', function(e) {
-              console.log('🎯 Clique detectado:', element.textContent.trim());
-              
-              let eventName = 'click_event';
-              let eventLabel = 'generic_click';
-              
-              if (hasWhatsApp) {
-                eventName = 'whatsapp_click';
-                eventLabel = 'botao_whatsapp';
-              } else if (hasPhone) {
-                eventName = 'phone_click';
-                eventLabel = 'botao_telefone';
-              } else if (hasAppointment) {
-                eventName = 'appointment_click';
-                eventLabel = 'botao_agendamento';
-              }
-              
-              // Enviar para GA4
-              if (typeof gtag !== 'undefined') {
-                gtag('event', eventName, {
-                  'event_category': 'engagement',
-                  'event_label': eventLabel,
-                  'page_location': window.location.href,
-                  'button_text': element.textContent.trim()
-                });
-                console.log('✅ Evento enviado para GA4:', eventName);
-              }
-              
-              // Enviar para dataLayer do GTM
-              if (typeof window.dataLayer !== 'undefined') {
-                window.dataLayer.push({
-                  'event': eventName,
-                  'event_category': 'engagement',
-                  'event_label': eventLabel,
-                  'button_text': element.textContent.trim(),
-                  'page_location': window.location.href
-                });
-                console.log('✅ Evento enviado para dataLayer:', eventName);
-              } else {
-                console.warn('⚠️ dataLayer não encontrado');
-              }
-            });
-            
-            console.log('👂 Listener adicionado:', element.textContent.trim());
-          }
-        });
-      }
-      
-      // Adicionar listeners inicialmente após um delay
-      setTimeout(function() {
-        console.log('⏱️ Primeira varredura de elementos...');
-        addEventListeners();
-      }, 2000);
-      
-      // Observar mudanças no DOM para capturar elementos adicionados dinamicamente
-      const observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-          if (mutation.addedNodes.length) {
-            addEventListeners();
-          }
-        });
-      });
-      
-      // Iniciar observação do DOM
-      observer.observe(document.body, {
-        childList: true,
-        subtree: true
-      });
-      
-      console.log('✅ Observador de DOM iniciado');
-    });
-    </script>
   </body>
 </html>
