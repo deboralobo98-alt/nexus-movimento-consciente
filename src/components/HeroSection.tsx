@@ -1,19 +1,15 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Heart, Award, Users, Play } from 'lucide-react';
 import heroImage from '@/assets/hero-dynamic.jpg';
-import { trackAppointmentClick, trackWhatsAppClick } from '@/lib/analytics';
+import { trackClick } from '@/lib/analytics';
 
 const HeroSection = () => {
-  const scrollToContact = () => {
-    trackAppointmentClick('hero_section');
+  const scrollToContact = (e: React.MouseEvent) => {
+    trackClick('schedule', e, 'hero');
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const handleWhatsAppClick = () => {
-    trackWhatsAppClick('hero_section');
   };
 
   return (
@@ -84,11 +80,11 @@ const HeroSection = () => {
               href="https://wa.me/5548991820345" 
               target="_blank" 
               rel="noopener noreferrer"
-              onClick={handleWhatsAppClick}
             >
               <Button 
                 variant="outline" 
                 size="lg"
+                onClick={(e) => trackClick('whatsapp', e, 'hero')}
                 className="text-lg px-10 py-6 h-auto rounded-full bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm transform hover:scale-105 transition-all duration-500 font-medium"
               >
                 Falar no WhatsApp

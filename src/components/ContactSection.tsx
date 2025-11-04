@@ -8,7 +8,7 @@ import {
   Clock,
   CheckCircle
 } from 'lucide-react';
-import { trackWhatsAppClick, trackPhoneClick } from '@/lib/analytics';
+import { trackClick } from '@/lib/analytics';
 
 const ContactSection = () => {
 
@@ -123,11 +123,11 @@ const ContactSection = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="inline-block w-full"
-                    onClick={() => trackWhatsAppClick('contact_section')}
                   >
                     <Button 
                       variant="appointment" 
                       size="lg"
+                      onClick={(e) => trackClick('whatsapp', e, 'contact')}
                       className="w-full text-lg py-6 h-auto rounded-full shadow-2xl hover:shadow-green-500/30 transform hover:scale-105 transition-all duration-500 font-medium bg-green-500 hover:bg-green-600"
                     >
                       <MessageCircle className="w-6 h-6 mr-3" />
@@ -234,8 +234,13 @@ const ContactSection = () => {
                 Nossa equipe está preparada para atendê-lo quando você mais precisar.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel:+5548991820345" onClick={() => trackPhoneClick('emergency_section')}>
-                  <Button variant="outline" size="lg" className="bg-white/20 border-white/30 text-white hover:bg-white/30">
+                <a href="tel:+5548991820345">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    onClick={(e) => trackClick('phone', e, 'emergency')}
+                    className="bg-white/20 border-white/30 text-white hover:bg-white/30"
+                  >
                     <Phone className="w-5 h-5" />
                     Ligar Agora
                   </Button>

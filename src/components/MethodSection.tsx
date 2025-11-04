@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Target, Heart, Star, CheckCircle } from 'lucide-react';
-import { trackAppointmentClick } from '@/lib/analytics';
+import { trackClick } from '@/lib/analytics';
 
 const MethodSection = () => {
-  const scrollToContact = () => {
-    trackAppointmentClick('method_section');
+  const scrollToContact = (e: React.MouseEvent) => {
+    trackClick('schedule', e, 'method');
     const element = document.getElementById('contact');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });

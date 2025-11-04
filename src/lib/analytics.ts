@@ -5,40 +5,25 @@ declare global {
   }
 }
 
-export const trackEvent = (eventName: string, eventData?: Record<string, any>) => {
-  if (typeof window !== 'undefined' && window.dataLayer) {
-    window.dataLayer.push({
-      event: eventName,
-      ...eventData,
-    });
+export function pushDL(event: string, params: Record<string, any> = {}) {
+  (window as any).dataLayer = (window as any).dataLayer || [];
+  (window as any).dataLayer.push({ event, ...params });
+}
+
+export function trackClick(
+  type: 'whatsapp' | 'phone' | 'email' | 'schedule',
+  e?: React.MouseEvent,
+  context: string = ''
+) {
+  try {
+    const target = (e?.currentTarget as HTMLElement) || (document.activeElement as HTMLElement);
+    const a = target?.closest?.('a');
+    const href =
+      (a?.getAttribute('href') || a?.getAttribute('data-href') || a?.getAttribute('data-url') || '').trim();
+    const text = (target?.textContent || target?.innerText || '').trim();
+
+    pushDL(`click_${type}`, { link_url: href, link_text: text, context });
+  } catch {
+    pushDL(`click_${type}`, { context });
   }
-};
-
-export const trackClick = (elementName: string, elementType: string, destination?: string) => {
-  trackEvent('click_event', {
-    element_name: elementName,
-    element_type: elementType,
-    destination: destination,
-  });
-};
-
-export const trackWhatsAppClick = (source: string) => {
-  trackClick('WhatsApp Button', 'button', 'whatsapp');
-  trackEvent('whatsapp_click', {
-    source: source,
-  });
-};
-
-export const trackPhoneClick = (source: string) => {
-  trackClick('Phone Button', 'button', 'phone');
-  trackEvent('phone_click', {
-    source: source,
-  });
-};
-
-export const trackAppointmentClick = (source: string) => {
-  trackClick('Appointment Button', 'button', 'contact_section');
-  trackEvent('appointment_click', {
-    source: source,
-  });
-};
+}
