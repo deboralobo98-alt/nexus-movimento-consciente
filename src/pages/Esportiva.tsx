@@ -30,7 +30,7 @@ const Esportiva = () => {
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 py-20 pt-28">
           <div className="max-w-2xl space-y-6">
-            <span className="inline-block px-3 py-1.5 bg-[#6aabb1] text-white rounded text-xs font-bold tracking-widest uppercase">
+            <span className="inline-block px-2 py-1 md:px-2.5 md:py-1 bg-[#6aabb1] text-white rounded text-[10px] md:text-xs font-bold tracking-widest uppercase">
               Parceria Exclusiva RedMob
             </span>
             
