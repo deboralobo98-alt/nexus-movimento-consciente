@@ -7,33 +7,37 @@ const Esportiva = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0a0a0a]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
             src={athleteHero} 
             alt="Atleta de alta performance" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/90 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/30" />
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl space-y-8">
-            <span className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-semibold tracking-wide uppercase animate-fade-in">
+        <div className="container mx-auto px-4 md:px-8 relative z-10 py-20">
+          <div className="max-w-2xl space-y-6">
+            <span className="inline-block px-3 py-1.5 bg-primary text-primary-foreground rounded text-xs font-bold tracking-widest uppercase">
               Parceria Exclusiva RedMob
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight animate-fade-in">
-              Atletas RedMob, levem sua performance a outro nível 🚀
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
+              Atletas RedMob,
+              <br />
+              <span className="text-primary">levem sua performance</span>
+              <br />
+              a outro nível
             </h1>
             
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-              A Nexus é referência em fisioterapia esportiva de alta performance. Tratamentos especializados para atletas que buscam excelência.
+            <p className="text-lg md:text-xl text-white/70 max-w-xl leading-relaxed">
+              A Nexus é referência em fisioterapia esportiva de alta performance.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="pt-6">
               <a 
                 href="https://wa.me/5548991820345?text=Olá! Sou atleta RedMob e tenho interesse em fisioterapia esportiva." 
                 target="_blank" 
@@ -41,11 +45,11 @@ const Esportiva = () => {
               >
                 <Button 
                   size="lg" 
-                  className="text-lg px-8 py-6 shadow-lg hover:shadow-xl transition-shadow"
+                  className="text-lg px-10 py-7 font-bold shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 transition-all duration-300"
                   onClick={(e) => trackClick('whatsapp', e, 'esportiva_hero')}
                 >
                   Agendar Avaliação Agora
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-3 h-5 w-5" />
                 </Button>
               </a>
             </div>
