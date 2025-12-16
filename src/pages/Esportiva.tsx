@@ -13,7 +13,7 @@ const Esportiva = () => {
           <img 
             src={athleteHero} 
             alt="Atleta de alta performance" 
-            className="w-full h-full object-cover opacity-60"
+            className="w-full h-full object-cover opacity-60 lg:object-[85%_center]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/90 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/30" />
