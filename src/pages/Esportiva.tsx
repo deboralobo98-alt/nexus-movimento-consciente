@@ -29,7 +29,7 @@ const Esportiva = () => {
         </div>
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 py-20 pt-28">
-          <div className="max-w-2xl space-y-6">
+          <div className="max-w-2xl lg:max-w-3xl space-y-6">
             <span className="inline-block px-2 py-1 md:px-3 md:py-1.5 bg-[#6aabb1] text-white rounded text-[9px] md:text-xs font-bold tracking-widest uppercase">
               Parceria Exclusiva
             </span>
@@ -42,7 +42,7 @@ const Esportiva = () => {
               a outro nível
             </h1>
             
-            <p className="text-sm md:text-base text-white/70 max-w-xl leading-relaxed">
+            <p className="text-sm md:text-base lg:text-lg text-white/70 max-w-xl leading-relaxed">
               Tenha o acompanhamento de especialistas em Fisioterapia Esportiva focados em <strong className="text-white font-semibold">prevenir lesões</strong>, <strong className="text-white font-semibold">acelerar sua recuperação</strong> e <strong className="text-white font-semibold">otimizar seus resultados</strong> dentro e fora da academia.
             </p>
             
