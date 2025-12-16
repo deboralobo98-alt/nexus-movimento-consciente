@@ -7,7 +7,7 @@ const Esportiva = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#1d1e3c]">
+      <section className="relative min-h-[85vh] flex items-center overflow-hidden bg-[#1d1e3c]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
