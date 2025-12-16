@@ -43,7 +43,7 @@ const Esportiva = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-white/70 max-w-xl leading-relaxed">
-              A Nexus é referência em fisioterapia esportiva de alta performance.
+              Tenha o acompanhamento de especialistas em Fisioterapia Esportiva focados em <strong className="text-white font-semibold">prevenir lesões</strong>, <strong className="text-white font-semibold">acelerar sua recuperação</strong> e <strong className="text-white font-semibold">otimizar seus resultados</strong> dentro e fora da academia.
             </p>
             
             <div className="pt-6">
