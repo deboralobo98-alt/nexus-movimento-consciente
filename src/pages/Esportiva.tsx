@@ -30,14 +30,14 @@ const Esportiva = () => {
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 py-20 pt-28">
           <div className="max-w-2xl space-y-6">
-            <span className="inline-block px-3 py-1.5 bg-primary text-primary-foreground rounded text-xs font-bold tracking-widest uppercase">
+            <span className="inline-block px-3 py-1.5 bg-[#6aabb1] text-white rounded text-xs font-bold tracking-widest uppercase">
               Parceria Exclusiva RedMob
             </span>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.1] tracking-tight">
               Atletas RedMob,
               <br />
-              <span className="text-primary">levem sua performance</span>
+              <span className="text-white">levem sua performance</span>
               <br />
               a outro nível
             </h1>
