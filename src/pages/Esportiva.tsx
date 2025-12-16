@@ -7,24 +7,24 @@ const Esportiva = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0a0a0a]">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#1d1e3c]">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
             src={athleteHero} 
             alt="Atleta de alta performance" 
-            className="w-full h-full object-cover opacity-60 lg:object-[30%_center]"
+            className="w-full h-full object-cover opacity-60 lg:object-[15%_center]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/90 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1d1e3c] via-[#1d1e3c]/90 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1d1e3c] via-transparent to-[#1d1e3c]/30" />
         </div>
         
         {/* Logo */}
         <div className="absolute top-6 left-4 md:left-8 z-20">
           <img 
-            src="/lovable-uploads/3207bc2f-91c0-46c3-9af2-c1aca7873ca6.png" 
+            src="/lovable-uploads/da52acbd-9df7-4eef-b616-5a5f275e7dbb.png" 
             alt="Nexus Fisioterapia"
-            className="h-10 md:h-12 w-auto"
+            className="h-10 md:h-12 w-auto brightness-0 invert"
           />
         </div>
         
