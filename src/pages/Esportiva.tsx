@@ -13,13 +13,22 @@ const Esportiva = () => {
           <img 
             src={athleteHero} 
             alt="Atleta de alta performance" 
-            className="w-full h-full object-cover opacity-60 lg:object-[85%_center]"
+            className="w-full h-full object-cover opacity-60 lg:object-[30%_center]"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/90 to-transparent" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]/30" />
         </div>
         
-        <div className="container mx-auto px-4 md:px-8 relative z-10 py-20">
+        {/* Logo */}
+        <div className="absolute top-6 left-4 md:left-8 z-20">
+          <img 
+            src="/lovable-uploads/3207bc2f-91c0-46c3-9af2-c1aca7873ca6.png" 
+            alt="Nexus Fisioterapia"
+            className="h-10 md:h-12 w-auto"
+          />
+        </div>
+        
+        <div className="container mx-auto px-4 md:px-8 relative z-10 py-20 pt-28">
           <div className="max-w-2xl space-y-6">
             <span className="inline-block px-3 py-1.5 bg-primary text-primary-foreground rounded text-xs font-bold tracking-widest uppercase">
               Parceria Exclusiva RedMob
