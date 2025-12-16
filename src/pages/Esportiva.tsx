@@ -29,7 +29,7 @@ const Esportiva = () => {
         </div>
         
         <div className="container mx-auto px-4 md:px-8 relative z-10 py-20 pt-28">
-          <div className="max-w-2xl space-y-6">
+          <div className="max-w-2xl space-y-6 text-center md:text-left mx-auto md:mx-0">
             <span className="inline-block px-2 py-1 md:px-3 md:py-1.5 bg-[#6aabb1] text-white rounded text-[9px] md:text-xs font-bold tracking-widest uppercase">
               Parceria Exclusiva
             </span>
