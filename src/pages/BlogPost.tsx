@@ -1,7 +1,7 @@
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
-import { Clock, ArrowLeft, User, Calendar } from 'lucide-react';
+import { Clock, ArrowLeft, Calendar } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useBlogPost } from '@/hooks/useBlogPosts';
@@ -104,10 +104,6 @@ const BlogPost = () => {
           />
           
           <div className="flex flex-wrap items-center gap-6 text-sm text-primary-foreground/70">
-            <span className="flex items-center gap-2">
-              <User className="w-4 h-4" />
-              {post.author}
-            </span>
             <span className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               {formatDate(post.date)}
