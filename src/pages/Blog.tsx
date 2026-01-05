@@ -244,13 +244,13 @@ const Blog = () => {
                 </div>
               </div>
 
-              {/* Newsletter CTA */}
+              {/* CTA Sidebar */}
               <div className="bg-primary rounded-2xl p-6 text-center">
                 <h3 className="text-lg font-bold text-primary-foreground mb-3">
-                  Receba nossas dicas
+                  Precisando de ajuda?
                 </h3>
                 <p className="text-sm text-primary-foreground/70 mb-5">
-                  Assine nossa newsletter e receba conteúdo exclusivo sobre saúde e bem-estar.
+                  Fale com nossa equipe de especialistas e tire suas dúvidas.
                 </p>
                 <Button 
                   variant="secondary" 
@@ -258,7 +258,7 @@ const Blog = () => {
                   asChild
                 >
                   <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
-                    Fale Conosco
+                    Falar com Especialista
                   </a>
                 </Button>
               </div>
