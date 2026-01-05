@@ -213,24 +213,6 @@ const BlogPost = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Author Box */}
-              <div className="mt-8 p-6 bg-card rounded-2xl border border-border">
-                <div className="flex items-start gap-4">
-                  <div className="w-14 h-14 rounded-full bg-muted flex items-center justify-center text-muted-foreground">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-foreground">Nexus Fisioterapia</h4>
-                    <p className="text-sm text-accent mb-2">Equipe de Especialistas</p>
-                    <p className="text-sm text-muted-foreground">
-                      Especialistas dedicados a compartilhar conhecimento e ajudar você a cuidar melhor da sua saúde.
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
 
             {/* Sidebar */}
