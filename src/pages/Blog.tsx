@@ -290,10 +290,10 @@ const Blog = () => {
             Nossa equipe especializada está pronta para criar um plano personalizado para suas necessidades.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button 
-              size="lg"
-              className="bg-white text-primary hover:bg-white/95 rounded-full px-10 py-6 text-base font-medium shadow-lg group"
+              size="default"
+              className="bg-white text-primary hover:bg-white/95 rounded-full px-6 py-2.5 text-sm font-medium shadow-lg group"
               asChild
             >
               <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
@@ -303,8 +303,8 @@ const Blog = () => {
             </Button>
             <Button 
               variant="outline" 
-              size="lg"
-              className="border-white/50 text-white hover:bg-white/10 rounded-full px-10 py-6 text-base font-medium bg-transparent"
+              size="default"
+              className="border-white/50 text-white hover:bg-white/10 rounded-full px-6 py-2.5 text-sm font-medium bg-transparent"
               asChild
             >
               <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
