@@ -30,26 +30,30 @@ const Blog = () => {
       <Header />
       
       {/* Hero Section - Matching reference exactly */}
-      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={heroBlog}
             alt="Pessoa praticando yoga em ambiente natural"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/50 to-primary/70" />
+          {/* Dark overlay on image */}
+          <div className="absolute inset-0 bg-primary/50" />
+          {/* Gradient fade to white at bottom */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
         </div>
         
-        <div className="container mx-auto px-4 relative z-10 text-center py-32">
-          <span className="inline-block px-6 py-2.5 mb-8 text-sm font-medium tracking-wide text-primary-foreground border border-primary-foreground/40 rounded-full bg-primary-foreground/5 backdrop-blur-sm">
+        <div className="container mx-auto px-4 relative z-10 text-center py-24">
+          <span className="inline-block px-6 py-2.5 mb-8 text-sm font-medium tracking-wide text-primary-foreground border border-primary-foreground/40 rounded-full bg-primary-foreground/10 backdrop-blur-sm">
             Saúde • Bem-estar • Movimento
           </span>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-8">
-            Nosso <em className="font-serif italic font-normal">Blog</em>
+            Nosso <em className="font-serif italic font-normal text-accent">Blog</em>
           </h1>
           
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed">
             Conteúdo especializado sobre fisioterapia, reabilitação e qualidade de vida 
             para você cuidar do seu corpo com conhecimento.
           </p>
