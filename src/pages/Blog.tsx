@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
-import { Clock, ArrowRight, Sparkles } from 'lucide-react';
+import { Clock, ArrowRight, Sparkles, Phone } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useBlogPosts } from '@/hooks/useBlogPosts';
@@ -268,35 +268,41 @@ const Blog = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 md:py-28 bg-primary">
+      <section className="py-24 md:py-32 bg-gradient-to-br from-accent via-accent/90 to-primary">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-            Cuide da sua saúde com quem entende
+          <span className="inline-block text-xs font-bold tracking-[0.2em] text-primary-foreground/80 uppercase mb-6">
+            Cuide da sua saúde
+          </span>
+          
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-primary-foreground mb-6 max-w-3xl mx-auto leading-tight">
+            Agende sua avaliação e comece sua jornada de recuperação
           </h2>
-          <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto mb-10">
-            Agende sua avaliação e descubra como a fisioterapia pode transformar sua qualidade de vida.
+          
+          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-10">
+            Nossa equipe especializada está pronta para criar um plano personalizado para suas necessidades.
           </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
-              variant="secondary" 
               size="lg"
-              className="group"
+              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full px-8 group"
               asChild
             >
               <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
-                Agendar Avaliação
+                Agendar Consulta
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-smooth" />
               </a>
             </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+              className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 rounded-full px-8"
               asChild
             >
-              <Link to="/">
-                Conheça a Nexus
-              </Link>
+              <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
+                <Phone className="mr-2 w-4 h-4" />
+                Falar no WhatsApp
+              </a>
             </Button>
           </div>
         </div>
