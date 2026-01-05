@@ -49,8 +49,9 @@ const Blog = () => {
             Saúde • Bem-estar • Movimento
           </span>
           
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-8">
-            Nosso <em className="font-serif italic font-normal text-accent">Blog</em>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl text-primary-foreground mb-8">
+            <span className="font-playfair font-bold">Nosso</span>{" "}
+            <span className="font-playfair italic text-accent">Blog</span>
           </h1>
           
           <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto leading-relaxed">
