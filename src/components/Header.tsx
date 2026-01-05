@@ -31,53 +31,53 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-4">
             <button 
               onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-sm text-foreground hover:text-primary transition-smooth font-medium"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection('about')}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-sm text-foreground hover:text-primary transition-smooth font-medium"
             >
               Sobre Nós
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-sm text-foreground hover:text-primary transition-smooth font-medium"
             >
               Serviços
             </button>
             <button 
               onClick={() => scrollToSection('team')}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-sm text-foreground hover:text-primary transition-smooth font-medium"
             >
               Equipe
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-sm text-foreground hover:text-primary transition-smooth font-medium"
             >
               Depoimentos
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-sm text-foreground hover:text-primary transition-smooth font-medium"
             >
               Contato
             </button>
             <Link 
               to="/blog"
-              className="text-foreground hover:text-primary transition-smooth font-medium"
+              className="text-sm text-foreground hover:text-primary transition-smooth font-medium"
             >
               Blog
             </Link>
           </nav>
 
           {/* Contact Actions */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-2">
             <a 
               href="tel:+5548991820345" 
               className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-primary transition-smooth"
