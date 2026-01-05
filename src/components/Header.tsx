@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Phone, MessageCircle } from 'lucide-react';
 import { trackClick } from '@/lib/analytics';
@@ -67,6 +68,12 @@ const Header = () => {
             >
               Contato
             </button>
+            <Link 
+              to="/blog"
+              className="text-foreground hover:text-primary transition-smooth font-medium"
+            >
+              Blog
+            </Link>
           </nav>
 
           {/* Contact Actions */}
@@ -150,6 +157,13 @@ const Header = () => {
               >
                 Contato
               </button>
+              <Link 
+                to="/blog"
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-left px-4 py-2 text-foreground hover:text-primary transition-smooth font-medium"
+              >
+                Blog
+              </Link>
               
               {/* Mobile Contact Actions */}
               <div className="px-4 py-2 space-y-3 border-t border-border mt-4 pt-4">
