@@ -268,24 +268,32 @@ const Blog = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-gradient-to-br from-accent via-accent/90 to-primary">
-        <div className="container mx-auto px-4 text-center">
-          <span className="inline-block text-xs font-bold tracking-[0.2em] text-primary-foreground/80 uppercase mb-6">
+      <section className="py-24 md:py-32 relative overflow-hidden">
+        {/* Gradient background matching reference */}
+        <div 
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(135deg, hsl(188 19% 55%) 0%, hsl(188 19% 45%) 50%, hsl(217 44% 25%) 100%)'
+          }}
+        />
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <span className="inline-block text-xs font-bold tracking-[0.25em] text-white/70 uppercase mb-6">
             Cuide da sua saúde
           </span>
           
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-primary-foreground mb-6 max-w-3xl mx-auto leading-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair font-bold text-white mb-6 max-w-3xl mx-auto leading-tight">
             Agende sua avaliação e comece sua jornada de recuperação
           </h2>
           
-          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto mb-10">
+          <p className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mb-12">
             Nossa equipe especializada está pronta para criar um plano personalizado para suas necessidades.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
-              className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 rounded-full px-8 group"
+              className="bg-white text-primary hover:bg-white/95 rounded-full px-10 py-6 text-base font-medium shadow-lg group"
               asChild
             >
               <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
@@ -296,7 +304,7 @@ const Blog = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 rounded-full px-8"
+              className="border-white/50 text-white hover:bg-white/10 rounded-full px-10 py-6 text-base font-medium bg-transparent"
               asChild
             >
               <a href="https://wa.me/5548991820345" target="_blank" rel="noopener noreferrer">
