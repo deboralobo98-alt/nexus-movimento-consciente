@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import { useBlogPosts } from '@/hooks/useBlogPosts';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
+import heroBlog from '@/assets/hero-blog.jpg';
 
 const Blog = () => {
   const { data: posts, isLoading, error } = useBlogPosts();
@@ -28,19 +29,19 @@ const Blog = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section - Larger with background image */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+      {/* Hero Section - Matching reference exactly */}
+      <section className="relative min-h-[75vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="/lovable-uploads/358c886a-9a41-43fb-80a2-5b4c00b84033.png"
-            alt="Fisioterapia"
+            src={heroBlog}
+            alt="Pessoa praticando yoga em ambiente natural"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/60 via-primary/70 to-primary/80" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/50 to-primary/70" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-center py-32">
-          <span className="inline-block px-6 py-2.5 mb-8 text-sm font-medium tracking-wide text-primary-foreground/90 border border-primary-foreground/30 rounded-full backdrop-blur-sm">
+          <span className="inline-block px-6 py-2.5 mb-8 text-sm font-medium tracking-wide text-primary-foreground border border-primary-foreground/40 rounded-full bg-primary-foreground/5 backdrop-blur-sm">
             Saúde • Bem-estar • Movimento
           </span>
           
