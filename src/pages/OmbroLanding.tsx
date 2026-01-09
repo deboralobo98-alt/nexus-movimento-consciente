@@ -32,6 +32,12 @@ const OmbroLanding = () => {
       <div className="bg-[#0a1628] text-white py-3 px-4">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 text-sm">
           <div className="flex items-center gap-6">
+            {/* Logo */}
+            <img 
+              src="/lovable-uploads/logo-nexus-sem-fundo.png" 
+              alt="Nexus Fisioterapia" 
+              className="h-8 brightness-0 invert"
+            />
             <a href="tel:+5511999999999" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-4 h-4 text-primary" />
               <span>+55 11 99999-9999</span>
