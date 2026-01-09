@@ -69,12 +69,12 @@ const OmbroLanding = () => {
                 <span className="text-[#2a9d8f] text-sm font-medium">Tratamento Especializado</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-playfair">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight font-playfair">
                 A dor no ombro não precisa ser sua companhia diária.<br />
                 <span className="text-[#2a9d8f]">Está na hora de tratá-la de verdade.</span>
               </h1>
               
-              <p className="text-lg text-gray-300 max-w-xl leading-relaxed">
+              <p className="text-base text-gray-300 max-w-xl leading-relaxed">
                 Na Nexus, oferecemos um tratamento personalizado, baseado em evidências científicas, 
                 que vai além do alívio temporário. Aqui, trabalhamos na causa da dor para você 
                 se livrar dela de forma duradoura.
