@@ -192,19 +192,27 @@ const OmbroLanding = () => {
       <section className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
-            {/* Left - Heading and Highlight */}
+            {/* Left - Content */}
             <div className="flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 bg-[#2a9d8f]/10 border border-[#2a9d8f]/30 rounded-full px-4 py-2 w-fit mb-6">
                 <span className="w-2 h-2 bg-[#2a9d8f] rounded-full" />
                 <span className="text-[#2a9d8f] text-sm font-medium">Reconheça os sinais</span>
               </div>
               
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Isso soa familiar?
-              </h2>
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Você tenta dormir, mas a dor no ombro te impede de relaxar. Cada movimento parece 
+                um desafio: levantar o braço, se vestir, treinar… Até tarefas simples, como escovar 
+                os dentes, se tornam complicadas.
+              </p>
               
-              <p className="text-muted-foreground text-lg leading-relaxed italic mb-8">
+              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+                Você já tentou de tudo: repouso, gelo, remédios, fisioterapia... mas, no fim das 
+                contas, a dor sempre volta.
+              </p>
+              
+              <p className="text-foreground font-medium text-lg italic mb-8">
                 Na maioria dos casos, isso não acontece porque você não tentou o suficiente.
+                A verdade é que você provavelmente nunca recebeu um plano real de reabilitação.
               </p>
               
               <Button 
@@ -217,28 +225,11 @@ const OmbroLanding = () => {
               </Button>
             </div>
             
-            {/* Right - Dark Blue Card */}
-            <div className="bg-gradient-to-b from-[#0f1d32] to-[#1a2d4a] rounded-3xl p-8 text-white flex flex-col justify-between">
-              <div>
-                <p className="text-lg leading-relaxed mb-6">
-                  Você tenta dormir, mas a dor no ombro te impede de relaxar. Cada movimento parece 
-                  um desafio: levantar o braço, se vestir, treinar… Até tarefas simples, como escovar 
-                  os dentes, se tornam complicadas.
-                </p>
-                
-                <div className="border-t border-white/20 my-6" />
-                
-                <p className="text-lg leading-relaxed">
-                  Você já tentou de tudo: repouso, gelo, remédios, fisioterapia... mas, no fim das 
-                  contas, a dor sempre volta.
-                </p>
-              </div>
-              
-              <div className="bg-[#2a9d8f] rounded-xl p-6 mt-8">
-                <p className="text-white font-medium text-center">
-                  A verdade é que você provavelmente nunca recebeu um plano real de reabilitação.
-                </p>
-              </div>
+            {/* Right - Blue Card with Heading */}
+            <div className="bg-gradient-to-b from-[#0f1d32] to-[#1a2d4a] rounded-3xl p-10 text-white flex items-center justify-center min-h-[300px]">
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white text-center leading-tight">
+                Isso soa<br />familiar?
+              </h2>
             </div>
           </div>
         </div>
