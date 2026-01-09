@@ -29,13 +29,13 @@ const OmbroLanding = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Top Bar */}
-      <div className="bg-[#0a1628] text-white py-4 px-4">
+      <div className="bg-[#0a1628] text-white py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <img 
             src="/lovable-uploads/logo-nexus-sem-fundo.png" 
             alt="Nexus Fisioterapia" 
-            className="h-16 brightness-0 invert"
+            className="h-10 md:h-12 brightness-0 invert"
           />
           
           <Button 
