@@ -29,28 +29,22 @@ const OmbroLanding = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Top Bar */}
-      <div className="bg-[#0a1628] text-white py-3 px-4">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4 text-sm">
-          <div className="flex items-center gap-6">
-            {/* Logo */}
-            <img 
-              src="/lovable-uploads/logo-nexus-sem-fundo.png" 
-              alt="Nexus Fisioterapia" 
-              className="h-8 brightness-0 invert"
-            />
-            <a href="tel:+5511999999999" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Phone className="w-4 h-4 text-primary" />
-              <span>+55 11 99999-9999</span>
-            </a>
-            <span className="hidden md:flex items-center gap-2">
-              <Clock className="w-4 h-4 text-primary" />
-              <span>Seg - Sex: 8:00 - 20:00</span>
-            </span>
-          </div>
-          <a href="mailto:contato@nexusfisio.com.br" className="flex items-center gap-2 hover:text-primary transition-colors">
-            <Mail className="w-4 h-4 text-primary" />
-            <span>contato@nexusfisio.com.br</span>
-          </a>
+      <div className="bg-[#0a1628] text-white py-4 px-4">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* Logo */}
+          <img 
+            src="/lovable-uploads/logo-nexus-sem-fundo.png" 
+            alt="Nexus Fisioterapia" 
+            className="h-12 brightness-0 invert"
+          />
+          
+          <Button 
+            size="lg" 
+            className="bg-[#2a9d8f] hover:bg-[#238b7e] text-white rounded-full px-6 py-3 font-semibold"
+            onClick={() => window.open(whatsappLink, '_blank')}
+          >
+            Agendar Avaliação
+          </Button>
         </div>
       </div>
 
