@@ -190,32 +190,55 @@ const OmbroLanding = () => {
 
       {/* Isso soa familiar? */}
       <section className="py-20 px-4 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground">
-              Isso soa familiar?
-            </h2>
-          </div>
-          
-          <div className="text-muted-foreground space-y-6 text-lg leading-relaxed">
-            <p>
-              Você tenta dormir, mas a dor no ombro te impede de relaxar. Cada movimento parece 
-              um desafio: levantar o braço, se vestir, treinar… Até tarefas simples, como escovar 
-              os dentes, se tornam complicadas.
-            </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+            {/* Left - Dark Blue Card */}
+            <div className="bg-gradient-to-b from-[#0f1d32] to-[#1a2d4a] rounded-3xl p-8 text-white flex flex-col justify-between">
+              <div>
+                <p className="text-lg leading-relaxed mb-6">
+                  Você tenta dormir, mas a dor no ombro te impede de relaxar. Cada movimento parece 
+                  um desafio: levantar o braço, se vestir, treinar… Até tarefas simples, como escovar 
+                  os dentes, se tornam complicadas.
+                </p>
+                
+                <div className="border-t border-white/20 my-6" />
+                
+                <p className="text-lg leading-relaxed">
+                  Você já tentou de tudo: repouso, gelo, remédios, fisioterapia... mas, no fim das 
+                  contas, a dor sempre volta.
+                </p>
+              </div>
+              
+              <div className="bg-[#2a9d8f] rounded-xl p-6 mt-8">
+                <p className="text-white font-medium text-center">
+                  A verdade é que você provavelmente nunca recebeu um plano real de reabilitação.
+                </p>
+              </div>
+            </div>
             
-            <p>
-              Você já tentou de tudo: repouso, gelo, remédios, fisioterapia... mas, no fim das 
-              contas, a dor sempre volta.
-            </p>
-            
-            <div className="bg-[#0f1d32] text-white p-8 rounded-2xl text-center mt-8">
-              <p className="text-xl font-medium">
+            {/* Right - Heading and Highlight */}
+            <div className="flex flex-col justify-center">
+              <div className="inline-flex items-center gap-2 bg-[#2a9d8f]/10 border border-[#2a9d8f]/30 rounded-full px-4 py-2 w-fit mb-6">
+                <span className="w-2 h-2 bg-[#2a9d8f] rounded-full" />
+                <span className="text-[#2a9d8f] text-sm font-medium">Reconheça os sinais</span>
+              </div>
+              
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Isso soa familiar?
+              </h2>
+              
+              <p className="text-muted-foreground text-lg leading-relaxed italic mb-8">
                 Na maioria dos casos, isso não acontece porque você não tentou o suficiente.
               </p>
-              <p className="text-xl font-semibold mt-4 text-[#2a9d8f]">
-                A verdade é que você provavelmente nunca recebeu um plano real de reabilitação.
-              </p>
+              
+              <Button 
+                size="lg" 
+                className="bg-[#2a9d8f] hover:bg-[#238b7e] text-white rounded-full px-8 py-6 text-lg font-semibold w-fit group"
+                onClick={() => window.open(whatsappLink, '_blank')}
+              >
+                Quero Mudar Isso
+                <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </Button>
             </div>
           </div>
         </div>
