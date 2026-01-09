@@ -339,7 +339,7 @@ const OmbroLanding = () => {
             {/* Left - Image */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="/lovable-uploads/hero-ombro-tratamento.jpeg"
+                src="/lovable-uploads/fisio-tratamento-resultados.jpeg"
                 alt="Tratamento de fisioterapia"
                 className="w-full h-[450px] object-cover"
               />
