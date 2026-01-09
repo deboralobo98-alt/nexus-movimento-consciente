@@ -116,7 +116,7 @@ const OmbroLanding = () => {
             <div className="relative hidden lg:block">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/lovable-uploads/0e966561-6870-4fba-9766-b1d7dfb5f60d.png"
+                  src="/lovable-uploads/hero-ombro-tratamento.jpeg"
                   alt="Fisioterapeuta realizando tratamento de ombro"
                   className="w-full h-[500px] object-cover"
                 />
