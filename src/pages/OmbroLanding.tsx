@@ -192,7 +192,14 @@ const OmbroLanding = () => {
       <section className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
-            {/* Left - Content */}
+            {/* Left - Blue Card with Heading */}
+            <div className="bg-gradient-to-b from-[#0f1d32] to-[#1a2d4a] rounded-3xl p-10 text-white flex items-center justify-center min-h-[300px]">
+              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white text-center leading-tight">
+                Isso soa<br />familiar?
+              </h2>
+            </div>
+            
+            {/* Right - Content */}
             <div className="flex flex-col justify-center">
               <div className="inline-flex items-center gap-2 bg-[#2a9d8f]/10 border border-[#2a9d8f]/30 rounded-full px-4 py-2 w-fit mb-6">
                 <span className="w-2 h-2 bg-[#2a9d8f] rounded-full" />
@@ -223,13 +230,6 @@ const OmbroLanding = () => {
                 Quero Mudar Isso
                 <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Button>
-            </div>
-            
-            {/* Right - Blue Card with Heading */}
-            <div className="bg-gradient-to-b from-[#0f1d32] to-[#1a2d4a] rounded-3xl p-10 text-white flex items-center justify-center min-h-[300px]">
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white text-center leading-tight">
-                Isso soa<br />familiar?
-              </h2>
             </div>
           </div>
         </div>
