@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { CheckCircle, XCircle, ChevronDown, Phone, Clock, Mail, ArrowUpRight, Star, Calendar } from 'lucide-react';
+import { CheckCircle, XCircle, ChevronDown, Phone, Clock, Mail, ArrowUpRight, Star, Calendar, Sparkles, Activity, Moon, Dumbbell, Brain } from 'lucide-react';
 import { useState } from 'react';
 
 const OmbroLanding = () => {
@@ -334,25 +334,45 @@ const OmbroLanding = () => {
 
       {/* O que você pode esperar */}
       <section className="py-20 px-4 bg-[#0f1d32]">
-        <div className="max-w-5xl mx-auto text-center">
-          <span className="text-primary font-semibold text-sm uppercase tracking-wider">Resultados</span>
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold text-white mt-2 mb-12">
-            O que você pode esperar
-          </h2>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { icon: '✨', text: 'Alívio real e progressivo da dor' },
-              { icon: '🏃', text: 'Retorno seguro às atividades do dia a dia' },
-              { icon: '😴', text: 'Melhora na qualidade do sono' },
-              { icon: '💪', text: 'Recuperação da confiança para se movimentar e treinar' },
-              { icon: '🧠', text: 'Autonomia e compreensão do seu corpo e seus limites' }
-            ].map((item, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
-                <span className="text-3xl mb-4 block">{item.icon}</span>
-                <p className="text-white font-medium">{item.text}</p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Image */}
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img 
+                src="/lovable-uploads/hero-ombro-tratamento.jpeg"
+                alt="Tratamento de fisioterapia"
+                className="w-full h-[450px] object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0f1d32]/60 to-transparent" />
+            </div>
+            
+            {/* Right - Content */}
+            <div>
+              <span className="text-[#2a9d8f] font-semibold text-sm uppercase tracking-wider">Resultados</span>
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-white mt-2 mb-10">
+                O que você pode esperar
+              </h2>
+              
+              <div className="space-y-6">
+                {[
+                  { icon: Sparkles, text: 'Alívio real e progressivo da dor' },
+                  { icon: Activity, text: 'Retorno seguro às atividades do dia a dia' },
+                  { icon: Moon, text: 'Melhora na qualidade do sono' },
+                  { icon: Dumbbell, text: 'Recuperação da confiança para se movimentar e treinar' },
+                  { icon: Brain, text: 'Autonomia e compreensão do seu corpo e seus limites' }
+                ].map((item, index) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <div key={index} className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-[#2a9d8f]/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <IconComponent className="w-6 h-6 text-[#2a9d8f]" />
+                      </div>
+                      <p className="text-white font-medium text-lg pt-2">{item.text}</p>
+                    </div>
+                  );
+                })}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
