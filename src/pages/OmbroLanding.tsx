@@ -70,14 +70,14 @@ const OmbroLanding = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-playfair">
-                Dor no Ombro?<br />
-                <span className="text-[#2a9d8f]">Recupere sua</span><br />
-                <span className="text-[#2a9d8f]">liberdade de movimento</span>
+                A dor no ombro não precisa ser sua companhia diária.<br />
+                <span className="text-[#2a9d8f]">Está na hora de tratá-la de verdade.</span>
               </h1>
               
               <p className="text-lg text-gray-300 max-w-xl leading-relaxed">
-                Tratamento especializado e personalizado para dores no ombro. 
-                Recupere sua qualidade de vida com nossa abordagem baseada em evidências científicas.
+                Na Nexus, oferecemos um tratamento personalizado, baseado em evidências científicas, 
+                que vai além do alívio temporário. Aqui, trabalhamos na causa da dor para você 
+                se livrar dela de forma duradoura.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -86,7 +86,7 @@ const OmbroLanding = () => {
                   className="bg-[#2a9d8f] hover:bg-[#238b7e] text-white rounded-full px-8 py-6 text-lg font-semibold group"
                   onClick={() => window.open(whatsappLink, '_blank')}
                 >
-                  Agende sua Avaliação
+                  Quero Avaliar Meu Caso
                   <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </Button>
                 <Button 
@@ -188,6 +188,39 @@ const OmbroLanding = () => {
         </div>
       </section>
 
+      {/* Isso soa familiar? */}
+      <section className="py-20 px-4 bg-background">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground">
+              Isso soa familiar?
+            </h2>
+          </div>
+          
+          <div className="text-muted-foreground space-y-6 text-lg leading-relaxed">
+            <p>
+              Você tenta dormir, mas a dor no ombro te impede de relaxar. Cada movimento parece 
+              um desafio: levantar o braço, se vestir, treinar… Até tarefas simples, como escovar 
+              os dentes, se tornam complicadas.
+            </p>
+            
+            <p>
+              Você já tentou de tudo: repouso, gelo, remédios, fisioterapia... mas, no fim das 
+              contas, a dor sempre volta.
+            </p>
+            
+            <div className="bg-[#0f1d32] text-white p-8 rounded-2xl text-center mt-8">
+              <p className="text-xl font-medium">
+                Na maioria dos casos, isso não acontece porque você não tentou o suficiente.
+              </p>
+              <p className="text-xl font-semibold mt-4 text-[#2a9d8f]">
+                A verdade é que você provavelmente nunca recebeu um plano real de reabilitação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Onde a maioria erra */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="max-w-4xl mx-auto">
@@ -218,15 +251,16 @@ const OmbroLanding = () => {
       {/* Abordagem Nexus */}
       <section id="abordagem" className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">Nossa metodologia</span>
             <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mt-2">
-              A abordagem Nexus
+              A abordagem Nexus: profunda, personalizada e embasada em ciência
             </h2>
-            <p className="text-xl text-muted-foreground mt-4">
-              Profunda, personalizada e embasada em ciência
-            </p>
           </div>
+          
+          <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+            Nosso primeiro passo é entender você de verdade. Na primeira consulta, fazemos uma avaliação completa:
+          </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div className="bg-card p-8 rounded-2xl border border-border shadow-sm hover:shadow-lg transition-shadow">
