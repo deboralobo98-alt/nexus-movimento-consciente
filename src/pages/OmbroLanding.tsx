@@ -197,15 +197,15 @@ const OmbroLanding = () => {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-stretch">
             {/* Left - Blue Card with Heading */}
-            <div className="bg-gradient-to-b from-[#0f1d32] to-[#1a2d4a] rounded-3xl p-10 text-white flex items-center justify-center min-h-[300px] relative overflow-hidden">
+            <div className="bg-gradient-to-b from-[#0f1d32] to-[#1a2d4a] rounded-3xl p-6 md:p-10 text-white flex items-center justify-center min-h-[150px] md:min-h-[300px] relative overflow-hidden">
               {/* Decorative element */}
               <img 
                 src="/lovable-uploads/decorative-element.png" 
                 alt="" 
                 className="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none"
               />
-              <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white text-center leading-tight relative z-10">
-                Isso soa<br />familiar?
+              <h2 className="font-playfair text-3xl md:text-5xl font-bold text-white text-center leading-tight relative z-10">
+                Isso soa familiar?
               </h2>
             </div>
             
