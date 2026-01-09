@@ -49,10 +49,20 @@ const OmbroLanding = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative bg-[#0f1d32] pt-8 pb-32 md:pb-40 overflow-visible">
+      <section className="relative bg-[#0f1d32] pt-8 pb-32 md:pb-40 overflow-visible min-h-[90vh] lg:min-h-0">
+        {/* Mobile Background Image */}
+        <div className="absolute inset-0 lg:hidden">
+          <img 
+            src="/lovable-uploads/hero-ombro-tratamento.jpeg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#0f1d32]/80" />
+        </div>
+        
         {/* Decorative elements */}
-        <div className="absolute top-20 left-10 w-64 h-64 bg-[#2a9d8f]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#2a9d8f]/5 rounded-full blur-3xl" />
+        <div className="absolute top-20 left-10 w-64 h-64 bg-[#2a9d8f]/10 rounded-full blur-3xl hidden lg:block" />
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#2a9d8f]/5 rounded-full blur-3xl hidden lg:block" />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[70vh]">
