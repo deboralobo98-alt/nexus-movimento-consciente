@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { CheckCircle, XCircle, ChevronDown, Phone, Clock, Mail, ArrowUpRight } from 'lucide-react';
+import { CheckCircle, XCircle, ChevronDown, Phone, Clock, Mail, ArrowUpRight, Star, Calendar } from 'lucide-react';
 import { useState } from 'react';
 
 const OmbroLanding = () => {
@@ -49,132 +49,91 @@ const OmbroLanding = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] bg-[#0f1d32] overflow-hidden">
+      <section className="relative bg-[#0f1d32] pt-8 pb-32 md:pb-40 overflow-visible">
         {/* Decorative elements */}
-        <div className="absolute inset-0">
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0f1d32] via-[#0f1d32] to-transparent z-10" />
-          
-          {/* Decorative cross/plus shape */}
-          <div className="absolute top-1/4 right-1/3 w-32 h-32 text-primary opacity-80 z-20">
-            <svg viewBox="0 0 100 100" fill="currentColor">
-              <rect x="35" y="10" width="30" height="80" rx="4" />
-              <rect x="10" y="35" width="80" height="30" rx="4" />
-            </svg>
-          </div>
-          
-          {/* Wave patterns */}
-          <svg className="absolute bottom-0 right-0 w-1/2 h-full opacity-20" viewBox="0 0 400 600" fill="none">
-            <path d="M100,600 Q150,400 100,200 Q50,0 100,0" stroke="currentColor" strokeWidth="2" className="text-primary" fill="none" />
-            <path d="M200,600 Q250,400 200,200 Q150,0 200,0" stroke="currentColor" strokeWidth="2" className="text-primary" fill="none" />
-            <path d="M300,600 Q350,400 300,200 Q250,0 300,0" stroke="currentColor" strokeWidth="2" className="text-primary" fill="none" />
-          </svg>
+        <div className="absolute top-20 left-10 w-64 h-64 bg-[#2a9d8f]/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#2a9d8f]/5 rounded-full blur-3xl" />
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[70vh]">
+            {/* Left Content */}
+            <div className="space-y-6 pt-8 lg:pt-0">
+              <div className="inline-flex items-center gap-2 bg-[#2a9d8f]/20 border border-[#2a9d8f]/30 rounded-full px-4 py-2">
+                <span className="w-2 h-2 bg-[#2a9d8f] rounded-full animate-pulse" />
+                <span className="text-[#2a9d8f] text-sm font-medium">Tratamento Especializado</span>
+              </div>
+              
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight font-playfair">
+                Dor no Ombro?<br />
+                <span className="text-[#2a9d8f]">Recupere sua</span><br />
+                <span className="text-[#2a9d8f]">liberdade de movimento</span>
+              </h1>
+              
+              <p className="text-lg text-gray-300 max-w-xl leading-relaxed">
+                Tratamento especializado e personalizado para dores no ombro. 
+                Recupere sua qualidade de vida com nossa abordagem baseada em evidências científicas.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <Button 
+                  size="lg" 
+                  className="bg-[#2a9d8f] hover:bg-[#238b7e] text-white rounded-full px-8 py-6 text-lg font-semibold group"
+                  onClick={() => window.open(whatsappLink, '_blank')}
+                >
+                  Agende sua Avaliação
+                  <ArrowUpRight className="ml-2 h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-2 border-white/30 text-white bg-white/10 hover:bg-white/20 rounded-full px-8 py-6 text-lg"
+                  onClick={() => scrollToSection('sobre-tratamento')}
+                >
+                  Ver Tratamento
+                </Button>
+              </div>
 
-          {/* Background image placeholder area */}
-          <div className="absolute right-0 top-0 w-1/2 h-full">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0f1d32] to-transparent z-10" />
-            <img 
-              src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" 
-              alt="Fisioterapeuta profissional"
-              className="w-full h-full object-cover object-center opacity-60"
-            />
-          </div>
-        </div>
-
-        {/* Header */}
-        <header className="relative z-30 py-6 px-4">
-          <div className="max-w-7xl mx-auto flex items-center justify-between">
-            <img 
-              src="/lovable-uploads/93bdecf0-45c3-4b60-92f6-ec22fb293f30.png" 
-              alt="Nexus Fisioterapia" 
-              className="h-10"
-            />
-            <Button 
-              className="hidden md:flex items-center gap-2 bg-transparent border-2 border-primary text-white hover:bg-primary hover:text-primary-foreground transition-all rounded-full px-6"
-              onClick={() => window.open(whatsappLink, '_blank')}
-            >
-              Agendar Avaliação
-              <ArrowUpRight className="w-4 h-4" />
-            </Button>
-          </div>
-        </header>
-
-        {/* Hero Content */}
-        <div className="relative z-30 max-w-7xl mx-auto px-4 pt-16 pb-24">
-          <div className="max-w-2xl">
-            {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/30 rounded-full px-4 py-2 mb-8">
-              <span className="text-primary text-xl">💚</span>
-              <span className="text-white text-sm font-medium">TRATAMENTO ESPECIALIZADO</span>
-            </div>
-
-            {/* Headline */}
-            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              A dor no ombro não precisa ser sua companhia diária.{' '}
-              <span className="text-primary">Está na hora de tratá-la de verdade.</span>
-            </h1>
-
-            {/* Subheadline */}
-            <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed">
-              Na Nexus, oferecemos um tratamento personalizado, baseado em evidências científicas, 
-              que vai além do alívio temporário. Aqui, trabalhamos na causa da dor para você se 
-              livrar dela de forma duradoura.
-            </p>
-
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg" 
-                className="text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all flex items-center gap-2 bg-primary hover:bg-primary/90"
-                onClick={() => window.open(whatsappLink, '_blank')}
-              >
-                Quero Avaliar Meu Caso
-                <ArrowUpRight className="w-5 h-5" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="text-lg px-8 py-6 rounded-full border-2 border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all flex items-center gap-2"
-                onClick={() => scrollToSection('abordagem')}
-              >
-                Ver Tratamento
-                <ArrowUpRight className="w-5 h-5" />
-              </Button>
-            </div>
-          </div>
-
-          {/* Testimonial Card */}
-          <div className="hidden lg:block absolute top-1/4 right-8 max-w-sm bg-[#1a2d47] rounded-2xl p-6 border border-white/10">
-            <p className="text-gray-300 italic mb-4">
-              "Minha missão é tratar cada paciente com cuidado, respeito e o mais alto padrão de conhecimento em fisioterapia."
-            </p>
-            <p className="text-primary font-semibold">— Equipe Nexus</p>
-          </div>
-        </div>
-
-        {/* Info Cards */}
-        <div className="absolute bottom-0 left-0 right-0 z-30">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-4 -mb-16">
-              <div className="bg-white rounded-2xl p-6 shadow-xl flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                  <Clock className="w-6 h-6 text-primary" />
+              {/* Trust indicators */}
+              <div className="flex items-center gap-6 pt-6">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-[#2a9d8f]" />
+                  <span className="text-gray-300 text-sm">+500 pacientes</span>
                 </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-1">Horário de Atendimento</h3>
-                  <p className="text-muted-foreground text-sm">Segunda - Sexta: 8:00 - 20:00</p>
-                  <p className="text-muted-foreground text-sm">Sábado: 8:00 - 14:00</p>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="h-5 w-5 text-[#2a9d8f]" />
+                  <span className="text-gray-300 text-sm">10+ anos experiência</span>
                 </div>
               </div>
-              <div className="bg-primary rounded-2xl p-6 shadow-xl flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-white mb-1">Agende sua Avaliação</h3>
-                  <a href="tel:+5511999999999" className="text-white/90 text-lg font-semibold hover:text-white transition-colors">
-                    +55 11 99999-9999
-                  </a>
+            </div>
+            
+            {/* Right Image Card */}
+            <div className="relative hidden lg:block">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src="/lovable-uploads/0e966561-6870-4fba-9766-b1d7dfb5f60d.png"
+                  alt="Fisioterapeuta realizando tratamento de ombro"
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1d32]/40 to-transparent" />
+              </div>
+              
+              {/* Floating testimonial card */}
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl max-w-xs">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-[#2a9d8f] rounded-full flex items-center justify-center flex-shrink-0">
+                    <span className="text-white font-bold text-sm">MF</span>
+                  </div>
+                  <div>
+                    <div className="flex gap-0.5 mb-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-gray-700 text-sm leading-snug">
+                      "Recuperei 100% do movimento do meu ombro após apenas 8 sessões."
+                    </p>
+                    <p className="text-gray-500 text-xs mt-1">Maria F. - Paciente</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,37 +141,42 @@ const OmbroLanding = () => {
         </div>
       </section>
 
-      {/* Spacer for overlapping cards */}
-      <div className="h-24 bg-background" />
-
-      {/* Problema - Isso soa familiar? */}
-      <section id="problema" className="py-20 px-4 bg-background">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-primary font-semibold text-sm uppercase tracking-wider">Você se identifica?</span>
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mt-2">
-              Isso soa familiar?
-            </h2>
-          </div>
-          
-          <div className="space-y-6 text-lg text-muted-foreground">
-            <p className="leading-relaxed">
-              Você tenta dormir, mas a dor no ombro te impede de relaxar. Cada movimento parece 
-              um desafio: levantar o braço, se vestir, treinar… Até tarefas simples, como escovar 
-              os dentes, se tornam complicadas.
-            </p>
+      {/* Info Cards Section - Outside hero to prevent clipping */}
+      <section className="relative z-20 -mt-20 md:-mt-24 pb-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            {/* Card Horário */}
+            <div className="bg-white rounded-2xl p-6 shadow-xl">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-[#2a9d8f]/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-6 w-6 text-[#2a9d8f]" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 text-lg mb-2">Horário de Atendimento</h3>
+                  <p className="text-gray-600 text-sm">Segunda a Sexta: 8h às 20h</p>
+                  <p className="text-gray-600 text-sm">Sábado: 8h às 14h</p>
+                </div>
+              </div>
+            </div>
             
-            <p className="leading-relaxed">
-              Você já tentou de tudo: repouso, gelo, remédios, fisioterapia... mas, no fim das 
-              contas, <strong className="text-foreground">a dor sempre volta.</strong>
-            </p>
-            
-            <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-r-xl my-8">
-              <p className="text-foreground font-medium text-lg mb-0">
-                Na maioria dos casos, isso não acontece porque você não tentou o suficiente.
-                <br />
-                <span className="text-primary">A verdade é que você provavelmente nunca recebeu um plano real de reabilitação.</span>
-              </p>
+            {/* Card Agende */}
+            <div className="bg-[#2a9d8f] rounded-2xl p-6 shadow-xl">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Calendar className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white text-lg mb-2">Agende sua Avaliação</h3>
+                  <p className="text-white/80 text-sm mb-3">Avaliação completa + plano de tratamento</p>
+                  <Button 
+                    size="sm"
+                    className="bg-white text-[#2a9d8f] hover:bg-gray-100 rounded-full text-sm font-medium"
+                    onClick={() => window.open(whatsappLink, '_blank')}
+                  >
+                    Agendar Agora
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -508,19 +472,6 @@ const OmbroLanding = () => {
         </div>
       </section>
 
-      {/* Footer mínimo */}
-      <footer className="py-8 px-4 bg-[#0a1628] border-t border-white/10">
-        <div className="max-w-4xl mx-auto text-center">
-          <img 
-            src="/lovable-uploads/93bdecf0-45c3-4b60-92f6-ec22fb293f30.png" 
-            alt="Nexus Fisioterapia" 
-            className="h-8 mx-auto mb-4"
-          />
-          <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Nexus Fisioterapia. Todos os direitos reservados.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 };
