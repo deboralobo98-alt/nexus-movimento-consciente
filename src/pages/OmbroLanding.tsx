@@ -35,7 +35,7 @@ const OmbroLanding = () => {
           <img 
             src="/lovable-uploads/logo-nexus-sem-fundo.png" 
             alt="Nexus Fisioterapia" 
-            className="h-12 brightness-0 invert"
+            className="h-16 brightness-0 invert"
           />
           
           <Button 
